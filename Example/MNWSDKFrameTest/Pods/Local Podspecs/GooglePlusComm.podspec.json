@@ -1,0 +1,41 @@
+{
+  "name": "GooglePlusComm",
+  "version": "1.0.O",
+  "summary": "GoogleSDK中间层",
+  "homepage": "https://mini1.cn",
+  "license": {
+    "type": "MIT",
+    "file": "GooglePlusComm/LICENSE"
+  },
+  "authors": {
+    "tanzhiwu": "tanzhiwu@mini1.cn"
+  },
+  "source": {
+    "git": "git@xxxx.git",
+    "tag": "1.0.O"
+  },
+  "static_framework": true,
+  "platforms": {
+    "ios": "12.0"
+  },
+  "frameworks": [
+    "Foundation",
+    "UIKit"
+  ],
+  "source_files": "GooglePlusComm/**/*.{h,m}",
+  "vendored_frameworks": "MNWSDK/**/ShareSDK/PlatformSDK/GoogleSDK/*.framework",
+  "weak_frameworks": "LocalAuthentication",
+  "resources": "MNWSDK/**/ShareSDK/PlatformSDK/GoogleSDK/*.bundle",
+  "pod_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "public_header_files": "GooglePlusComm/**/{GooglePlusCommunication}.h",
+  "dependencies": {
+    "MNWSDK": [
+
+    ]
+  }
+}

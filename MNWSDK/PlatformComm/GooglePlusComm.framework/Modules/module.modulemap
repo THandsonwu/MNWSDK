@@ -1,0 +1,6 @@
+framework module GooglePlusComm {
+  umbrella header "GooglePlusComm-umbrella.h"
+
+  export *
+  module * { export * }
+}

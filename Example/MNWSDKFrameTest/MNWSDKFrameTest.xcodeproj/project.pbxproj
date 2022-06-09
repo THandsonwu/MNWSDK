@@ -1,0 +1,1202 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4590E142002C4B82968CEE26 /* Pods_MNWSDKFrameTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F69A6F3B0E80AA859289303 /* Pods_MNWSDKFrameTest.framework */; };
+		EE81976E284207190036FFEE /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE81976D284207190036FFEE /* LocalAuthentication.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		EEA346432845B5D00007297E /* ResetPswViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA346412845B5D00007297E /* ResetPswViewController.m */; };
+		EEA346442845B5D00007297E /* ResetPswViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEA346422845B5D00007297E /* ResetPswViewController.xib */; };
+		EEBE9A0D2850AE9A004E8E9D /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBE99FD2850AE9A004E8E9D /* FBSDKLoginKit.framework */; };
+		EEBE9A0E2850AE9A004E8E9D /* FacebookSDKStrings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EEBE99FE2850AE9A004E8E9D /* FacebookSDKStrings.bundle */; };
+		EEBE9A0F2850AE9A004E8E9D /* FBAEMKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBE99FF2850AE9A004E8E9D /* FBAEMKit.framework */; };
+		EEBE9A102850AE9A004E8E9D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBE9A002850AE9A004E8E9D /* FBSDKCoreKit.framework */; };
+		EEBE9A112850AE9A004E8E9D /* FBSDKCoreKit_Basics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBE9A012850AE9A004E8E9D /* FBSDKCoreKit_Basics.framework */; };
+		EEBE9A122850AE9A004E8E9D /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBE9A032850AE9A004E8E9D /* GTMSessionFetcher.framework */; };
+		EEBE9A132850AE9A004E8E9D /* GTMAppAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBE9A042850AE9A004E8E9D /* GTMAppAuth.framework */; };
+		EEBE9A142850AE9A004E8E9D /* AppAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBE9A052850AE9A004E8E9D /* AppAuth.framework */; };
+		EEBE9A152850AE9A004E8E9D /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EEBE9A062850AE9A004E8E9D /* GoogleSignIn.bundle */; };
+		EEBE9A162850AE9A004E8E9D /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBE9A072850AE9A004E8E9D /* GoogleSignIn.framework */; };
+		EEBE9A172850AE9A004E8E9D /* AppleComm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBE9A092850AE9A004E8E9D /* AppleComm.framework */; };
+		EEBE9A182850AE9A004E8E9D /* GooglePlusComm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBE9A0A2850AE9A004E8E9D /* GooglePlusComm.framework */; };
+		EEBE9A192850AE9A004E8E9D /* FacebookComm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBE9A0B2850AE9A004E8E9D /* FacebookComm.framework */; };
+		EEBE9A1A2850AE9B004E8E9D /* MNWSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBE9A0C2850AE9A004E8E9D /* MNWSDK.framework */; };
+		EEBF48BF28339594003DA38E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBF48BE28339594003DA38E /* AppDelegate.m */; };
+		EEBF48C528339594003DA38E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBF48C428339594003DA38E /* ViewController.m */; };
+		EEBF48C828339594003DA38E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEBF48C628339594003DA38E /* Main.storyboard */; };
+		EEBF48CA28339595003DA38E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEBF48C928339595003DA38E /* Assets.xcassets */; };
+		EEBF48CD28339595003DA38E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEBF48CB28339595003DA38E /* LaunchScreen.storyboard */; };
+		EEBF48D028339595003DA38E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBF48CF28339595003DA38E /* main.m */; };
+		EEBF48DA28339595003DA38E /* MNWSDKFrameTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBF48D928339595003DA38E /* MNWSDKFrameTestTests.m */; };
+		EEBF48E428339595003DA38E /* MNWSDKFrameTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBF48E328339595003DA38E /* MNWSDKFrameTestUITests.m */; };
+		EEBF48E628339595003DA38E /* MNWSDKFrameTestUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBF48E528339595003DA38E /* MNWSDKFrameTestUITestsLaunchTests.m */; };
+		EEBF496228339835003DA38E /* UICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBF48FC28339834003DA38E /* UICKeyChainStore.m */; };
+		EEBF496328339835003DA38E /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBF490028339834003DA38E /* TTTAttributedLabel.m */; };
+		EEBF496428339835003DA38E /* DeviceUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBF490528339834003DA38E /* DeviceUtils.m */; };
+		EEBF496528339835003DA38E /* MNCustomNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBF490A28339834003DA38E /* MNCustomNavigationBar.m */; };
+		EEBF496728339835003DA38E /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBF490F28339834003DA38E /* UITextView+Placeholder.m */; };
+		EEBF496828339835003DA38E /* UIViewController+Extends.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBF491128339834003DA38E /* UIViewController+Extends.m */; };
+		EEBF496928339835003DA38E /* UIViewController+AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBF491428339834003DA38E /* UIViewController+AlertView.m */; };
+		EEBF496A28339835003DA38E /* UIImage+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBF491628339834003DA38E /* UIImage+Utils.m */; };
+		EEBF496B28339835003DA38E /* NSMutableDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBF491A28339834003DA38E /* NSMutableDictionary+Safe.m */; };
+		EEBF496C28339835003DA38E /* NSDictionary+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBF491B28339834003DA38E /* NSDictionary+Utils.m */; };
+		EEBF496D28339835003DA38E /* NSData+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBF491D28339834003DA38E /* NSData+Utils.m */; };
+		EEBF496E28339835003DA38E /* NSObject+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBF491F28339834003DA38E /* NSObject+Utils.m */; };
+		EEBF496F28339835003DA38E /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBF492128339834003DA38E /* NSString+Utils.m */; };
+		EEBF497028339835003DA38E /* MNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBF492428339834003DA38E /* MNViewController.m */; };
+		EEBF497128339835003DA38E /* NMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBF493228339834003DA38E /* NMNavigationController.m */; };
+		EEBF497228339835003DA38E /* MNViewOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBF493428339834003DA38E /* MNViewOperation.m */; };
+		EEBF497328339835003DA38E /* MNTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBF493528339834003DA38E /* MNTabBarController.m */; };
+		EEBF497428339835003DA38E /* MNViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBF493628339834003DA38E /* MNViewModel.m */; };
+		EEBF497528339835003DA38E /* MNViewHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBF493728339834003DA38E /* MNViewHolder.m */; };
+		EEBF497628339835003DA38E /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBF493828339834003DA38E /* Toast.swift */; };
+		EEBF497728339835003DA38E /* MNConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBF493928339834003DA38E /* MNConstants.m */; };
+		EEBF498328339835003DA38E /* MNWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBF495728339834003DA38E /* MNWebViewController.m */; };
+		EEBF49CB2833B5C7003DA38E /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBF49CA2833B5C7003DA38E /* AuthenticationServices.framework */; };
+		EEBF49DE2834E6EC003DA38E /* MNLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBF49DC2834E6EC003DA38E /* MNLoginViewController.m */; };
+		EEBF49DF2834E6EC003DA38E /* MNLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEBF49DD2834E6EC003DA38E /* MNLoginViewController.xib */; };
+		EEBF49E62834EDD7003DA38E /* MNSMSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBF49E42834EDD7003DA38E /* MNSMSLoginViewController.m */; };
+		EEBF49E72834EDD7003DA38E /* MNSMSLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEBF49E52834EDD7003DA38E /* MNSMSLoginViewController.xib */; };
+		EEBF49EB2834EFD5003DA38E /* MNHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBF49E92834EFD5003DA38E /* MNHomeViewController.m */; };
+		EEBF49EC2834EFD5003DA38E /* MNHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEBF49EA2834EFD5003DA38E /* MNHomeViewController.xib */; };
+		EEBF49F12835EA7C003DA38E /* MNAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBF49F02835EA7C003DA38E /* MNAccountManager.m */; };
+		EEBF49F728362116003DA38E /* NSObject+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBF49F328362116003DA38E /* NSObject+Utils.m */; };
+		EEBF4A04283659AB003DA38E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBF4A03283659AB003DA38E /* libc++.tbd */; };
+		EEBF4A06283659B7003DA38E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBF4A05283659B7003DA38E /* libz.tbd */; };
+		EEBF4A08283659C0003DA38E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBF4A07283659C0003DA38E /* libsqlite3.tbd */; };
+		EEBF4A0A283659CE003DA38E /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBF4A09283659CE003DA38E /* SafariServices.framework */; };
+		EEBF4A0C283659D7003DA38E /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBF4A0B283659D7003DA38E /* Accelerate.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EEBF48D628339595003DA38E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEBF48B228339594003DA38E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEBF48B928339594003DA38E;
+			remoteInfo = MNWSDKFrameTest;
+		};
+		EEBF48E028339595003DA38E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEBF48B228339594003DA38E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEBF48B928339594003DA38E;
+			remoteInfo = MNWSDKFrameTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3ABC50736390DFFB93003BCA /* Pods-MNWSDKFrameTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MNWSDKFrameTest.debug.xcconfig"; path = "Target Support Files/Pods-MNWSDKFrameTest/Pods-MNWSDKFrameTest.debug.xcconfig"; sourceTree = "<group>"; };
+		4F69A6F3B0E80AA859289303 /* Pods_MNWSDKFrameTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MNWSDKFrameTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE81976D284207190036FFEE /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		EEA346402845B5D00007297E /* ResetPswViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResetPswViewController.h; sourceTree = "<group>"; };
+		EEA346412845B5D00007297E /* ResetPswViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResetPswViewController.m; sourceTree = "<group>"; };
+		EEA346422845B5D00007297E /* ResetPswViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResetPswViewController.xib; sourceTree = "<group>"; };
+		EEBE999D284F4C6A004E8E9D /* GTMAppAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GTMAppAuth.framework; path = MNWSDKFrameTest/ThirdLib/MNWSDK/PlatformSDK/GoogleSDK/GTMAppAuth.framework; sourceTree = "<group>"; };
+		EEBE999E284F4C6A004E8E9D /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GTMSessionFetcher.framework; path = MNWSDKFrameTest/ThirdLib/MNWSDK/PlatformSDK/GoogleSDK/GTMSessionFetcher.framework; sourceTree = "<group>"; };
+		EEBE999F284F4C6A004E8E9D /* AppAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppAuth.framework; path = MNWSDKFrameTest/ThirdLib/MNWSDK/PlatformSDK/GoogleSDK/AppAuth.framework; sourceTree = "<group>"; };
+		EEBE99FD2850AE9A004E8E9D /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		EEBE99FE2850AE9A004E8E9D /* FacebookSDKStrings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FacebookSDKStrings.bundle; sourceTree = "<group>"; };
+		EEBE99FF2850AE9A004E8E9D /* FBAEMKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAEMKit.framework; sourceTree = "<group>"; };
+		EEBE9A002850AE9A004E8E9D /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		EEBE9A012850AE9A004E8E9D /* FBSDKCoreKit_Basics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit_Basics.framework; sourceTree = "<group>"; };
+		EEBE9A032850AE9A004E8E9D /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GTMSessionFetcher.framework; sourceTree = "<group>"; };
+		EEBE9A042850AE9A004E8E9D /* GTMAppAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GTMAppAuth.framework; sourceTree = "<group>"; };
+		EEBE9A052850AE9A004E8E9D /* AppAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppAuth.framework; sourceTree = "<group>"; };
+		EEBE9A062850AE9A004E8E9D /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleSignIn.bundle; sourceTree = "<group>"; };
+		EEBE9A072850AE9A004E8E9D /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSignIn.framework; sourceTree = "<group>"; };
+		EEBE9A092850AE9A004E8E9D /* AppleComm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppleComm.framework; sourceTree = "<group>"; };
+		EEBE9A0A2850AE9A004E8E9D /* GooglePlusComm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlusComm.framework; sourceTree = "<group>"; };
+		EEBE9A0B2850AE9A004E8E9D /* FacebookComm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookComm.framework; sourceTree = "<group>"; };
+		EEBE9A0C2850AE9A004E8E9D /* MNWSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MNWSDK.framework; sourceTree = "<group>"; };
+		EEBF48BA28339594003DA38E /* MNWSDKFrameTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MNWSDKFrameTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEBF48BD28339594003DA38E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EEBF48BE28339594003DA38E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EEBF48C328339594003DA38E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EEBF48C428339594003DA38E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EEBF48C728339594003DA38E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EEBF48C928339595003DA38E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EEBF48CC28339595003DA38E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EEBF48CE28339595003DA38E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEBF48CF28339595003DA38E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EEBF48D528339595003DA38E /* MNWSDKFrameTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MNWSDKFrameTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEBF48D928339595003DA38E /* MNWSDKFrameTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNWSDKFrameTestTests.m; sourceTree = "<group>"; };
+		EEBF48DF28339595003DA38E /* MNWSDKFrameTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MNWSDKFrameTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEBF48E328339595003DA38E /* MNWSDKFrameTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNWSDKFrameTestUITests.m; sourceTree = "<group>"; };
+		EEBF48E528339595003DA38E /* MNWSDKFrameTestUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNWSDKFrameTestUITestsLaunchTests.m; sourceTree = "<group>"; };
+		EEBF48F7283397D7003DA38E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		EEBF48FC28339834003DA38E /* UICKeyChainStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICKeyChainStore.m; sourceTree = "<group>"; };
+		EEBF48FD28339834003DA38E /* UICKeyChainStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICKeyChainStore.h; sourceTree = "<group>"; };
+		EEBF48FF28339834003DA38E /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
+		EEBF490028339834003DA38E /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
+		EEBF490328339834003DA38E /* AppDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDefines.h; sourceTree = "<group>"; };
+		EEBF490528339834003DA38E /* DeviceUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceUtils.m; sourceTree = "<group>"; };
+		EEBF490628339834003DA38E /* DeviceUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceUtils.h; sourceTree = "<group>"; };
+		EEBF490928339834003DA38E /* MNCustomNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNCustomNavigationBar.h; sourceTree = "<group>"; };
+		EEBF490A28339834003DA38E /* MNCustomNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNCustomNavigationBar.m; sourceTree = "<group>"; };
+		EEBF490E28339834003DA38E /* UIImage+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Utils.h"; sourceTree = "<group>"; };
+		EEBF490F28339834003DA38E /* UITextView+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Placeholder.m"; sourceTree = "<group>"; };
+		EEBF491128339834003DA38E /* UIViewController+Extends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Extends.m"; sourceTree = "<group>"; };
+		EEBF491228339834003DA38E /* UIViewController+AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AlertView.h"; sourceTree = "<group>"; };
+		EEBF491328339834003DA38E /* UIViewController+Extends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Extends.h"; sourceTree = "<group>"; };
+		EEBF491428339834003DA38E /* UIViewController+AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AlertView.m"; sourceTree = "<group>"; };
+		EEBF491528339834003DA38E /* UITextView+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Placeholder.h"; sourceTree = "<group>"; };
+		EEBF491628339834003DA38E /* UIImage+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Utils.m"; sourceTree = "<group>"; };
+		EEBF491928339834003DA38E /* NSDictionary+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Utils.h"; sourceTree = "<group>"; };
+		EEBF491A28339834003DA38E /* NSMutableDictionary+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Safe.m"; sourceTree = "<group>"; };
+		EEBF491B28339834003DA38E /* NSDictionary+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Utils.m"; sourceTree = "<group>"; };
+		EEBF491C28339834003DA38E /* NSMutableDictionary+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Safe.h"; sourceTree = "<group>"; };
+		EEBF491D28339834003DA38E /* NSData+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Utils.m"; sourceTree = "<group>"; };
+		EEBF491E28339834003DA38E /* NSString+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utils.h"; sourceTree = "<group>"; };
+		EEBF491F28339834003DA38E /* NSObject+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Utils.m"; sourceTree = "<group>"; };
+		EEBF492028339834003DA38E /* NSData+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Utils.h"; sourceTree = "<group>"; };
+		EEBF492128339834003DA38E /* NSString+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utils.m"; sourceTree = "<group>"; };
+		EEBF492228339834003DA38E /* NSObject+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Utils.h"; sourceTree = "<group>"; };
+		EEBF492428339834003DA38E /* MNViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNViewController.m; sourceTree = "<group>"; };
+		EEBF492528339834003DA38E /* MNViewOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNViewOperation.h; sourceTree = "<group>"; };
+		EEBF492628339834003DA38E /* MNViewHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNViewHolder.h; sourceTree = "<group>"; };
+		EEBF492728339834003DA38E /* MNViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNViewModel.h; sourceTree = "<group>"; };
+		EEBF492828339834003DA38E /* MNTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNTabBarController.h; sourceTree = "<group>"; };
+		EEBF492A28339834003DA38E /* MNNavigatorActionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNNavigatorActionProtocol.h; sourceTree = "<group>"; };
+		EEBF492B28339834003DA38E /* MNSharedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNSharedModel.h; sourceTree = "<group>"; };
+		EEBF492C28339834003DA38E /* MNLifeCycle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNLifeCycle.h; sourceTree = "<group>"; };
+		EEBF492D28339834003DA38E /* MNController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNController.h; sourceTree = "<group>"; };
+		EEBF492E28339834003DA38E /* MNViewHolderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNViewHolderProtocol.h; sourceTree = "<group>"; };
+		EEBF492F28339834003DA38E /* MNViewModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNViewModelProtocol.h; sourceTree = "<group>"; };
+		EEBF493028339834003DA38E /* MNViewOperationProtocal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNViewOperationProtocal.h; sourceTree = "<group>"; };
+		EEBF493128339834003DA38E /* MNNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNNavigationController.h; sourceTree = "<group>"; };
+		EEBF493228339834003DA38E /* NMNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMNavigationController.m; sourceTree = "<group>"; };
+		EEBF493328339834003DA38E /* MNViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNViewController.h; sourceTree = "<group>"; };
+		EEBF493428339834003DA38E /* MNViewOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNViewOperation.m; sourceTree = "<group>"; };
+		EEBF493528339834003DA38E /* MNTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNTabBarController.m; sourceTree = "<group>"; };
+		EEBF493628339834003DA38E /* MNViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNViewModel.m; sourceTree = "<group>"; };
+		EEBF493728339834003DA38E /* MNViewHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNViewHolder.m; sourceTree = "<group>"; };
+		EEBF493828339834003DA38E /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		EEBF493928339834003DA38E /* MNConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNConstants.m; sourceTree = "<group>"; };
+		EEBF495528339834003DA38E /* MNConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNConstants.h; sourceTree = "<group>"; };
+		EEBF495728339834003DA38E /* MNWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNWebViewController.m; sourceTree = "<group>"; };
+		EEBF495828339834003DA38E /* MNWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNWebViewController.h; sourceTree = "<group>"; };
+		EEBF49C22833A5E6003DA38E /* MNWSDKFrameTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MNWSDKFrameTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		EEBF49C92833B531003DA38E /* MNWSDKFrameTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MNWSDKFrameTest.entitlements; sourceTree = "<group>"; };
+		EEBF49CA2833B5C7003DA38E /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		EEBF49DB2834E6EC003DA38E /* MNLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNLoginViewController.h; sourceTree = "<group>"; };
+		EEBF49DC2834E6EC003DA38E /* MNLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNLoginViewController.m; sourceTree = "<group>"; };
+		EEBF49DD2834E6EC003DA38E /* MNLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MNLoginViewController.xib; sourceTree = "<group>"; };
+		EEBF49E32834EDD7003DA38E /* MNSMSLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNSMSLoginViewController.h; sourceTree = "<group>"; };
+		EEBF49E42834EDD7003DA38E /* MNSMSLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNSMSLoginViewController.m; sourceTree = "<group>"; };
+		EEBF49E52834EDD7003DA38E /* MNSMSLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MNSMSLoginViewController.xib; sourceTree = "<group>"; };
+		EEBF49E82834EFD5003DA38E /* MNHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNHomeViewController.h; sourceTree = "<group>"; };
+		EEBF49E92834EFD5003DA38E /* MNHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNHomeViewController.m; sourceTree = "<group>"; };
+		EEBF49EA2834EFD5003DA38E /* MNHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MNHomeViewController.xib; sourceTree = "<group>"; };
+		EEBF49EF2835EA7C003DA38E /* MNAccountManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNAccountManager.h; sourceTree = "<group>"; };
+		EEBF49F02835EA7C003DA38E /* MNAccountManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNAccountManager.m; sourceTree = "<group>"; };
+		EEBF49F328362116003DA38E /* NSObject+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Utils.m"; sourceTree = "<group>"; };
+		EEBF49F628362116003DA38E /* NSObject+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Utils.h"; sourceTree = "<group>"; };
+		EEBF4A03283659AB003DA38E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		EEBF4A05283659B7003DA38E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		EEBF4A07283659C0003DA38E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		EEBF4A09283659CE003DA38E /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		EEBF4A0B283659D7003DA38E /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		F1ED6C96708E4BD97A4EA251 /* Pods-MNWSDKFrameTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MNWSDKFrameTest.release.xcconfig"; path = "Target Support Files/Pods-MNWSDKFrameTest/Pods-MNWSDKFrameTest.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EEBF48B728339594003DA38E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEBE9A112850AE9A004E8E9D /* FBSDKCoreKit_Basics.framework in Frameworks */,
+				EE81976E284207190036FFEE /* LocalAuthentication.framework in Frameworks */,
+				EEBF4A0C283659D7003DA38E /* Accelerate.framework in Frameworks */,
+				EEBE9A122850AE9A004E8E9D /* GTMSessionFetcher.framework in Frameworks */,
+				EEBE9A0D2850AE9A004E8E9D /* FBSDKLoginKit.framework in Frameworks */,
+				EEBE9A182850AE9A004E8E9D /* GooglePlusComm.framework in Frameworks */,
+				EEBE9A132850AE9A004E8E9D /* GTMAppAuth.framework in Frameworks */,
+				EEBE9A102850AE9A004E8E9D /* FBSDKCoreKit.framework in Frameworks */,
+				EEBE9A162850AE9A004E8E9D /* GoogleSignIn.framework in Frameworks */,
+				EEBF4A0A283659CE003DA38E /* SafariServices.framework in Frameworks */,
+				EEBF4A08283659C0003DA38E /* libsqlite3.tbd in Frameworks */,
+				EEBE9A0F2850AE9A004E8E9D /* FBAEMKit.framework in Frameworks */,
+				EEBF4A06283659B7003DA38E /* libz.tbd in Frameworks */,
+				EEBE9A142850AE9A004E8E9D /* AppAuth.framework in Frameworks */,
+				EEBF4A04283659AB003DA38E /* libc++.tbd in Frameworks */,
+				EEBE9A172850AE9A004E8E9D /* AppleComm.framework in Frameworks */,
+				EEBE9A1A2850AE9B004E8E9D /* MNWSDK.framework in Frameworks */,
+				EEBF49CB2833B5C7003DA38E /* AuthenticationServices.framework in Frameworks */,
+				4590E142002C4B82968CEE26 /* Pods_MNWSDKFrameTest.framework in Frameworks */,
+				EEBE9A192850AE9A004E8E9D /* FacebookComm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEBF48D228339595003DA38E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEBF48DC28339595003DA38E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		51E9748D90FCBCBE2569E354 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3ABC50736390DFFB93003BCA /* Pods-MNWSDKFrameTest.debug.xcconfig */,
+				F1ED6C96708E4BD97A4EA251 /* Pods-MNWSDKFrameTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7A0031DABA7DA7B6DEF427CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEBE999F284F4C6A004E8E9D /* AppAuth.framework */,
+				EEBE999D284F4C6A004E8E9D /* GTMAppAuth.framework */,
+				EEBE999E284F4C6A004E8E9D /* GTMSessionFetcher.framework */,
+				EE81976D284207190036FFEE /* LocalAuthentication.framework */,
+				EEBF4A0B283659D7003DA38E /* Accelerate.framework */,
+				EEBF4A09283659CE003DA38E /* SafariServices.framework */,
+				EEBF4A07283659C0003DA38E /* libsqlite3.tbd */,
+				EEBF4A05283659B7003DA38E /* libz.tbd */,
+				EEBF4A03283659AB003DA38E /* libc++.tbd */,
+				EEBF49CA2833B5C7003DA38E /* AuthenticationServices.framework */,
+				4F69A6F3B0E80AA859289303 /* Pods_MNWSDKFrameTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EEA3463F2845B5A60007297E /* Reset */ = {
+			isa = PBXGroup;
+			children = (
+				EEA346402845B5D00007297E /* ResetPswViewController.h */,
+				EEA346412845B5D00007297E /* ResetPswViewController.m */,
+				EEA346422845B5D00007297E /* ResetPswViewController.xib */,
+			);
+			path = Reset;
+			sourceTree = "<group>";
+		};
+		EEBE99FA2850AE9A004E8E9D /* MNWSDK */ = {
+			isa = PBXGroup;
+			children = (
+				EEBE99FB2850AE9A004E8E9D /* PlatformSDK */,
+				EEBE9A082850AE9A004E8E9D /* PlatformComm */,
+				EEBE9A0C2850AE9A004E8E9D /* MNWSDK.framework */,
+			);
+			name = MNWSDK;
+			path = ../../../../MNWSDK;
+			sourceTree = "<group>";
+		};
+		EEBE99FB2850AE9A004E8E9D /* PlatformSDK */ = {
+			isa = PBXGroup;
+			children = (
+				EEBE99FC2850AE9A004E8E9D /* FacebookSDK */,
+				EEBE9A022850AE9A004E8E9D /* GoogleSDK */,
+			);
+			path = PlatformSDK;
+			sourceTree = "<group>";
+		};
+		EEBE99FC2850AE9A004E8E9D /* FacebookSDK */ = {
+			isa = PBXGroup;
+			children = (
+				EEBE99FD2850AE9A004E8E9D /* FBSDKLoginKit.framework */,
+				EEBE99FE2850AE9A004E8E9D /* FacebookSDKStrings.bundle */,
+				EEBE99FF2850AE9A004E8E9D /* FBAEMKit.framework */,
+				EEBE9A002850AE9A004E8E9D /* FBSDKCoreKit.framework */,
+				EEBE9A012850AE9A004E8E9D /* FBSDKCoreKit_Basics.framework */,
+			);
+			path = FacebookSDK;
+			sourceTree = "<group>";
+		};
+		EEBE9A022850AE9A004E8E9D /* GoogleSDK */ = {
+			isa = PBXGroup;
+			children = (
+				EEBE9A032850AE9A004E8E9D /* GTMSessionFetcher.framework */,
+				EEBE9A042850AE9A004E8E9D /* GTMAppAuth.framework */,
+				EEBE9A052850AE9A004E8E9D /* AppAuth.framework */,
+				EEBE9A062850AE9A004E8E9D /* GoogleSignIn.bundle */,
+				EEBE9A072850AE9A004E8E9D /* GoogleSignIn.framework */,
+			);
+			path = GoogleSDK;
+			sourceTree = "<group>";
+		};
+		EEBE9A082850AE9A004E8E9D /* PlatformComm */ = {
+			isa = PBXGroup;
+			children = (
+				EEBE9A092850AE9A004E8E9D /* AppleComm.framework */,
+				EEBE9A0A2850AE9A004E8E9D /* GooglePlusComm.framework */,
+				EEBE9A0B2850AE9A004E8E9D /* FacebookComm.framework */,
+			);
+			path = PlatformComm;
+			sourceTree = "<group>";
+		};
+		EEBF48B128339594003DA38E = {
+			isa = PBXGroup;
+			children = (
+				EEBF48BC28339594003DA38E /* MNWSDKFrameTest */,
+				EEBF48D828339595003DA38E /* MNWSDKFrameTestTests */,
+				EEBF48E228339595003DA38E /* MNWSDKFrameTestUITests */,
+				EEBF48BB28339594003DA38E /* Products */,
+				51E9748D90FCBCBE2569E354 /* Pods */,
+				7A0031DABA7DA7B6DEF427CF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EEBF48BB28339594003DA38E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEBF48BA28339594003DA38E /* MNWSDKFrameTest.app */,
+				EEBF48D528339595003DA38E /* MNWSDKFrameTestTests.xctest */,
+				EEBF48DF28339595003DA38E /* MNWSDKFrameTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EEBF48BC28339594003DA38E /* MNWSDKFrameTest */ = {
+			isa = PBXGroup;
+			children = (
+				EEBF49C92833B531003DA38E /* MNWSDKFrameTest.entitlements */,
+				EEBF490128339834003DA38E /* Common */,
+				EEA3463F2845B5A60007297E /* Reset */,
+				EEBF495928339835003DA38E /* Home */,
+				EEBF493A28339834003DA38E /* Login */,
+				EEBF495528339834003DA38E /* MNConstants.h */,
+				EEBF493928339834003DA38E /* MNConstants.m */,
+				EEBF49F628362116003DA38E /* NSObject+Utils.h */,
+				EEBF49F328362116003DA38E /* NSObject+Utils.m */,
+				EEBF48F828339834003DA38E /* ThirdLib */,
+				EEBF495628339834003DA38E /* Web */,
+				EEBF48BD28339594003DA38E /* AppDelegate.h */,
+				EEBF48BE28339594003DA38E /* AppDelegate.m */,
+				EEBF48C328339594003DA38E /* ViewController.h */,
+				EEBF48C428339594003DA38E /* ViewController.m */,
+				EEBF49EF2835EA7C003DA38E /* MNAccountManager.h */,
+				EEBF49F02835EA7C003DA38E /* MNAccountManager.m */,
+				EEBF48C628339594003DA38E /* Main.storyboard */,
+				EEBF48C928339595003DA38E /* Assets.xcassets */,
+				EEBF48CB28339595003DA38E /* LaunchScreen.storyboard */,
+				EEBF48CE28339595003DA38E /* Info.plist */,
+				EEBF48CF28339595003DA38E /* main.m */,
+				EEBF48F7283397D7003DA38E /* PrefixHeader.pch */,
+				EEBF49C22833A5E6003DA38E /* MNWSDKFrameTest-Bridging-Header.h */,
+			);
+			path = MNWSDKFrameTest;
+			sourceTree = "<group>";
+		};
+		EEBF48D828339595003DA38E /* MNWSDKFrameTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				EEBF48D928339595003DA38E /* MNWSDKFrameTestTests.m */,
+			);
+			path = MNWSDKFrameTestTests;
+			sourceTree = "<group>";
+		};
+		EEBF48E228339595003DA38E /* MNWSDKFrameTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EEBF48E328339595003DA38E /* MNWSDKFrameTestUITests.m */,
+				EEBF48E528339595003DA38E /* MNWSDKFrameTestUITestsLaunchTests.m */,
+			);
+			path = MNWSDKFrameTestUITests;
+			sourceTree = "<group>";
+		};
+		EEBF48F828339834003DA38E /* ThirdLib */ = {
+			isa = PBXGroup;
+			children = (
+				EEBE99FA2850AE9A004E8E9D /* MNWSDK */,
+				EEBF48FB28339834003DA38E /* UICKeyChainStore */,
+				EEBF48FE28339834003DA38E /* TTTAttributedLabel */,
+			);
+			path = ThirdLib;
+			sourceTree = "<group>";
+		};
+		EEBF48FB28339834003DA38E /* UICKeyChainStore */ = {
+			isa = PBXGroup;
+			children = (
+				EEBF48FC28339834003DA38E /* UICKeyChainStore.m */,
+				EEBF48FD28339834003DA38E /* UICKeyChainStore.h */,
+			);
+			path = UICKeyChainStore;
+			sourceTree = "<group>";
+		};
+		EEBF48FE28339834003DA38E /* TTTAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				EEBF48FF28339834003DA38E /* TTTAttributedLabel.h */,
+				EEBF490028339834003DA38E /* TTTAttributedLabel.m */,
+			);
+			path = TTTAttributedLabel;
+			sourceTree = "<group>";
+		};
+		EEBF490128339834003DA38E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EEBF490328339834003DA38E /* AppDefines.h */,
+				EEBF490428339834003DA38E /* Utils */,
+				EEBF490728339834003DA38E /* UIControl */,
+				EEBF490C28339834003DA38E /* Categories */,
+				EEBF492328339834003DA38E /* Base */,
+				EEBF493828339834003DA38E /* Toast.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		EEBF490428339834003DA38E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EEBF490528339834003DA38E /* DeviceUtils.m */,
+				EEBF490628339834003DA38E /* DeviceUtils.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EEBF490728339834003DA38E /* UIControl */ = {
+			isa = PBXGroup;
+			children = (
+				EEBF490828339834003DA38E /* NavigationBar */,
+			);
+			path = UIControl;
+			sourceTree = "<group>";
+		};
+		EEBF490828339834003DA38E /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				EEBF490928339834003DA38E /* MNCustomNavigationBar.h */,
+				EEBF490A28339834003DA38E /* MNCustomNavigationBar.m */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		EEBF490C28339834003DA38E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				EEBF490D28339834003DA38E /* UIKit */,
+				EEBF491728339834003DA38E /* Foundation */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		EEBF490D28339834003DA38E /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				EEBF490E28339834003DA38E /* UIImage+Utils.h */,
+				EEBF490F28339834003DA38E /* UITextView+Placeholder.m */,
+				EEBF491028339834003DA38E /* UIViewController */,
+				EEBF491528339834003DA38E /* UITextView+Placeholder.h */,
+				EEBF491628339834003DA38E /* UIImage+Utils.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		EEBF491028339834003DA38E /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EEBF491128339834003DA38E /* UIViewController+Extends.m */,
+				EEBF491228339834003DA38E /* UIViewController+AlertView.h */,
+				EEBF491328339834003DA38E /* UIViewController+Extends.h */,
+				EEBF491428339834003DA38E /* UIViewController+AlertView.m */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		EEBF491728339834003DA38E /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				EEBF491828339834003DA38E /* NSDictionary */,
+				EEBF491D28339834003DA38E /* NSData+Utils.m */,
+				EEBF491E28339834003DA38E /* NSString+Utils.h */,
+				EEBF491F28339834003DA38E /* NSObject+Utils.m */,
+				EEBF492028339834003DA38E /* NSData+Utils.h */,
+				EEBF492128339834003DA38E /* NSString+Utils.m */,
+				EEBF492228339834003DA38E /* NSObject+Utils.h */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		EEBF491828339834003DA38E /* NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				EEBF491928339834003DA38E /* NSDictionary+Utils.h */,
+				EEBF491A28339834003DA38E /* NSMutableDictionary+Safe.m */,
+				EEBF491B28339834003DA38E /* NSDictionary+Utils.m */,
+				EEBF491C28339834003DA38E /* NSMutableDictionary+Safe.h */,
+			);
+			path = NSDictionary;
+			sourceTree = "<group>";
+		};
+		EEBF492328339834003DA38E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EEBF492428339834003DA38E /* MNViewController.m */,
+				EEBF492528339834003DA38E /* MNViewOperation.h */,
+				EEBF492628339834003DA38E /* MNViewHolder.h */,
+				EEBF492728339834003DA38E /* MNViewModel.h */,
+				EEBF492828339834003DA38E /* MNTabBarController.h */,
+				EEBF492928339834003DA38E /* Protocol */,
+				EEBF493128339834003DA38E /* MNNavigationController.h */,
+				EEBF493228339834003DA38E /* NMNavigationController.m */,
+				EEBF493328339834003DA38E /* MNViewController.h */,
+				EEBF493428339834003DA38E /* MNViewOperation.m */,
+				EEBF493528339834003DA38E /* MNTabBarController.m */,
+				EEBF493628339834003DA38E /* MNViewModel.m */,
+				EEBF493728339834003DA38E /* MNViewHolder.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		EEBF492928339834003DA38E /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				EEBF492A28339834003DA38E /* MNNavigatorActionProtocol.h */,
+				EEBF492B28339834003DA38E /* MNSharedModel.h */,
+				EEBF492C28339834003DA38E /* MNLifeCycle.h */,
+				EEBF492D28339834003DA38E /* MNController.h */,
+				EEBF492E28339834003DA38E /* MNViewHolderProtocol.h */,
+				EEBF492F28339834003DA38E /* MNViewModelProtocol.h */,
+				EEBF493028339834003DA38E /* MNViewOperationProtocal.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		EEBF493A28339834003DA38E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EEBF494428339834003DA38E /* Controller */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		EEBF494428339834003DA38E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EEBF49DB2834E6EC003DA38E /* MNLoginViewController.h */,
+				EEBF49DC2834E6EC003DA38E /* MNLoginViewController.m */,
+				EEBF49DD2834E6EC003DA38E /* MNLoginViewController.xib */,
+				EEBF49E32834EDD7003DA38E /* MNSMSLoginViewController.h */,
+				EEBF49E42834EDD7003DA38E /* MNSMSLoginViewController.m */,
+				EEBF49E52834EDD7003DA38E /* MNSMSLoginViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EEBF495628339834003DA38E /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				EEBF495728339834003DA38E /* MNWebViewController.m */,
+				EEBF495828339834003DA38E /* MNWebViewController.h */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		EEBF495928339835003DA38E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EEBF49E82834EFD5003DA38E /* MNHomeViewController.h */,
+				EEBF49E92834EFD5003DA38E /* MNHomeViewController.m */,
+				EEBF49EA2834EFD5003DA38E /* MNHomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EEBF48B928339594003DA38E /* MNWSDKFrameTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEBF48E928339595003DA38E /* Build configuration list for PBXNativeTarget "MNWSDKFrameTest" */;
+			buildPhases = (
+				2BFFA6224DDE91ED186B3560 /* [CP] Check Pods Manifest.lock */,
+				EEBF48B628339594003DA38E /* Sources */,
+				EEBF48B728339594003DA38E /* Frameworks */,
+				EEBF48B828339594003DA38E /* Resources */,
+				B876130F4C444A545FE247AE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MNWSDKFrameTest;
+			productName = MNWSDKFrameTest;
+			productReference = EEBF48BA28339594003DA38E /* MNWSDKFrameTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EEBF48D428339595003DA38E /* MNWSDKFrameTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEBF48EC28339595003DA38E /* Build configuration list for PBXNativeTarget "MNWSDKFrameTestTests" */;
+			buildPhases = (
+				EEBF48D128339595003DA38E /* Sources */,
+				EEBF48D228339595003DA38E /* Frameworks */,
+				EEBF48D328339595003DA38E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEBF48D728339595003DA38E /* PBXTargetDependency */,
+			);
+			name = MNWSDKFrameTestTests;
+			productName = MNWSDKFrameTestTests;
+			productReference = EEBF48D528339595003DA38E /* MNWSDKFrameTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EEBF48DE28339595003DA38E /* MNWSDKFrameTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEBF48EF28339595003DA38E /* Build configuration list for PBXNativeTarget "MNWSDKFrameTestUITests" */;
+			buildPhases = (
+				EEBF48DB28339595003DA38E /* Sources */,
+				EEBF48DC28339595003DA38E /* Frameworks */,
+				EEBF48DD28339595003DA38E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEBF48E128339595003DA38E /* PBXTargetDependency */,
+			);
+			name = MNWSDKFrameTestUITests;
+			productName = MNWSDKFrameTestUITests;
+			productReference = EEBF48DF28339595003DA38E /* MNWSDKFrameTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EEBF48B228339594003DA38E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					EEBF48B928339594003DA38E = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					EEBF48D428339595003DA38E = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = EEBF48B928339594003DA38E;
+					};
+					EEBF48DE28339595003DA38E = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = EEBF48B928339594003DA38E;
+					};
+				};
+			};
+			buildConfigurationList = EEBF48B528339594003DA38E /* Build configuration list for PBXProject "MNWSDKFrameTest" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EEBF48B128339594003DA38E;
+			productRefGroup = EEBF48BB28339594003DA38E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EEBF48B928339594003DA38E /* MNWSDKFrameTest */,
+				EEBF48D428339595003DA38E /* MNWSDKFrameTestTests */,
+				EEBF48DE28339595003DA38E /* MNWSDKFrameTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EEBF48B828339594003DA38E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEBF49EC2834EFD5003DA38E /* MNHomeViewController.xib in Resources */,
+				EEBF48CD28339595003DA38E /* LaunchScreen.storyboard in Resources */,
+				EEBF49E72834EDD7003DA38E /* MNSMSLoginViewController.xib in Resources */,
+				EEBF49DF2834E6EC003DA38E /* MNLoginViewController.xib in Resources */,
+				EEBE9A152850AE9A004E8E9D /* GoogleSignIn.bundle in Resources */,
+				EEBF48CA28339595003DA38E /* Assets.xcassets in Resources */,
+				EEA346442845B5D00007297E /* ResetPswViewController.xib in Resources */,
+				EEBF48C828339594003DA38E /* Main.storyboard in Resources */,
+				EEBE9A0E2850AE9A004E8E9D /* FacebookSDKStrings.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEBF48D328339595003DA38E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEBF48DD28339595003DA38E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BFFA6224DDE91ED186B3560 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MNWSDKFrameTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B876130F4C444A545FE247AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MNWSDKFrameTest/Pods-MNWSDKFrameTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MNWSDKFrameTest/Pods-MNWSDKFrameTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MNWSDKFrameTest/Pods-MNWSDKFrameTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EEBF48B628339594003DA38E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEBF49F12835EA7C003DA38E /* MNAccountManager.m in Sources */,
+				EEBF497728339835003DA38E /* MNConstants.m in Sources */,
+				EEBF49DE2834E6EC003DA38E /* MNLoginViewController.m in Sources */,
+				EEBF496D28339835003DA38E /* NSData+Utils.m in Sources */,
+				EEBF48C528339594003DA38E /* ViewController.m in Sources */,
+				EEBF497328339835003DA38E /* MNTabBarController.m in Sources */,
+				EEBF497228339835003DA38E /* MNViewOperation.m in Sources */,
+				EEBF48BF28339594003DA38E /* AppDelegate.m in Sources */,
+				EEBF496928339835003DA38E /* UIViewController+AlertView.m in Sources */,
+				EEBF496A28339835003DA38E /* UIImage+Utils.m in Sources */,
+				EEBF49F728362116003DA38E /* NSObject+Utils.m in Sources */,
+				EEBF48D028339595003DA38E /* main.m in Sources */,
+				EEBF496728339835003DA38E /* UITextView+Placeholder.m in Sources */,
+				EEBF496228339835003DA38E /* UICKeyChainStore.m in Sources */,
+				EEBF49E62834EDD7003DA38E /* MNSMSLoginViewController.m in Sources */,
+				EEA346432845B5D00007297E /* ResetPswViewController.m in Sources */,
+				EEBF496528339835003DA38E /* MNCustomNavigationBar.m in Sources */,
+				EEBF497128339835003DA38E /* NMNavigationController.m in Sources */,
+				EEBF497028339835003DA38E /* MNViewController.m in Sources */,
+				EEBF496428339835003DA38E /* DeviceUtils.m in Sources */,
+				EEBF496C28339835003DA38E /* NSDictionary+Utils.m in Sources */,
+				EEBF496B28339835003DA38E /* NSMutableDictionary+Safe.m in Sources */,
+				EEBF496F28339835003DA38E /* NSString+Utils.m in Sources */,
+				EEBF496328339835003DA38E /* TTTAttributedLabel.m in Sources */,
+				EEBF496828339835003DA38E /* UIViewController+Extends.m in Sources */,
+				EEBF49EB2834EFD5003DA38E /* MNHomeViewController.m in Sources */,
+				EEBF498328339835003DA38E /* MNWebViewController.m in Sources */,
+				EEBF496E28339835003DA38E /* NSObject+Utils.m in Sources */,
+				EEBF497528339835003DA38E /* MNViewHolder.m in Sources */,
+				EEBF497628339835003DA38E /* Toast.swift in Sources */,
+				EEBF497428339835003DA38E /* MNViewModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEBF48D128339595003DA38E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEBF48DA28339595003DA38E /* MNWSDKFrameTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEBF48DB28339595003DA38E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEBF48E628339595003DA38E /* MNWSDKFrameTestUITestsLaunchTests.m in Sources */,
+				EEBF48E428339595003DA38E /* MNWSDKFrameTestUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EEBF48D728339595003DA38E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEBF48B928339594003DA38E /* MNWSDKFrameTest */;
+			targetProxy = EEBF48D628339595003DA38E /* PBXContainerItemProxy */;
+		};
+		EEBF48E128339595003DA38E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEBF48B928339594003DA38E /* MNWSDKFrameTest */;
+			targetProxy = EEBF48E028339595003DA38E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EEBF48C628339594003DA38E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEBF48C728339594003DA38E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EEBF48CB28339595003DA38E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEBF48CC28339595003DA38E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EEBF48E728339595003DA38E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EEBF48E828339595003DA38E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EEBF48EA28339595003DA38E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ABC50736390DFFB93003BCA /* Pods-MNWSDKFrameTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MNWSDKFrameTest/MNWSDKFrameTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NAA4VA2675;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MNWSDKFrameTest/ThirdLib",
+					"$(PROJECT_DIR)/MNWSDKFrameTest/ThirdLib/ShareSDK/Support/PlatformSDK/FacebookSDK",
+					"$(PROJECT_DIR)/MNWSDKFrameTest/ThirdLib/ShareSDK/Support/PlatformSDK/QQSDK",
+					"$(PROJECT_DIR)/MNWSDKFrameTest/ThirdLib/ShareSDK/Support/Required",
+					"$(PROJECT_DIR)/MNWSDKFrameTest/ThirdLib/ShareSDK/Support/Optional",
+					"$(PROJECT_DIR)/MNWSDKFrameTest/ThirdLib/ShareSDK/Support/PlatformConnector",
+					"$(PROJECT_DIR)/MNWSDKFrameTest/ThirdLib/ShareSDK",
+					"$(PROJECT_DIR)/MNWSDKFrameTest/ThirdLib/MNWSDK/PlatformSDK/FacebookSDK",
+					"$(PROJECT_DIR)/MNWSDKFrameTest/ThirdLib/MNWSDK/PlatformSDK/GoogleSDK",
+					"$(PROJECT_DIR)/MNWSDKFrameTest/ThirdLib/MNWSDK",
+				);
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/MNWSDKFrameTest/PrefixHeader.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MNWSDKFrameTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MNWSDKFrameTest/ThirdLib/ShareSDK/Support/PlatformSDK/WeChatSDK",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_CODE_SIGN_FLAGS = "--generate-entitlement-der";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.mini1.MNWSDKFrameTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MNWSDKFrameTest/MNWSDKFrameTest-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EEBF48EB28339595003DA38E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1ED6C96708E4BD97A4EA251 /* Pods-MNWSDKFrameTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MNWSDKFrameTest/MNWSDKFrameTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NAA4VA2675;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MNWSDKFrameTest/ThirdLib",
+					"$(PROJECT_DIR)/MNWSDKFrameTest/ThirdLib/ShareSDK/Support/PlatformSDK/FacebookSDK",
+					"$(PROJECT_DIR)/MNWSDKFrameTest/ThirdLib/ShareSDK/Support/PlatformSDK/QQSDK",
+					"$(PROJECT_DIR)/MNWSDKFrameTest/ThirdLib/ShareSDK/Support/Required",
+					"$(PROJECT_DIR)/MNWSDKFrameTest/ThirdLib/ShareSDK/Support/Optional",
+					"$(PROJECT_DIR)/MNWSDKFrameTest/ThirdLib/ShareSDK/Support/PlatformConnector",
+					"$(PROJECT_DIR)/MNWSDKFrameTest/ThirdLib/ShareSDK",
+					"$(PROJECT_DIR)/MNWSDKFrameTest/ThirdLib/MNWSDK/PlatformSDK/FacebookSDK",
+					"$(PROJECT_DIR)/MNWSDKFrameTest/ThirdLib/MNWSDK/PlatformSDK/GoogleSDK",
+					"$(PROJECT_DIR)/MNWSDKFrameTest/ThirdLib/MNWSDK",
+				);
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/MNWSDKFrameTest/PrefixHeader.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MNWSDKFrameTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MNWSDKFrameTest/ThirdLib/ShareSDK/Support/PlatformSDK/WeChatSDK",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_CODE_SIGN_FLAGS = "--generate-entitlement-der";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.mini1.MNWSDKFrameTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MNWSDKFrameTest/MNWSDKFrameTest-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EEBF48ED28339595003DA38E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NAA4VA2675;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.mini1.MNWSDKFrameTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MNWSDKFrameTest.app/MNWSDKFrameTest";
+			};
+			name = Debug;
+		};
+		EEBF48EE28339595003DA38E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NAA4VA2675;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.mini1.MNWSDKFrameTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MNWSDKFrameTest.app/MNWSDKFrameTest";
+			};
+			name = Release;
+		};
+		EEBF48F028339595003DA38E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NAA4VA2675;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.mini1.MNWSDKFrameTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MNWSDKFrameTest;
+			};
+			name = Debug;
+		};
+		EEBF48F128339595003DA38E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NAA4VA2675;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.mini1.MNWSDKFrameTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MNWSDKFrameTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EEBF48B528339594003DA38E /* Build configuration list for PBXProject "MNWSDKFrameTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEBF48E728339595003DA38E /* Debug */,
+				EEBF48E828339595003DA38E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEBF48E928339595003DA38E /* Build configuration list for PBXNativeTarget "MNWSDKFrameTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEBF48EA28339595003DA38E /* Debug */,
+				EEBF48EB28339595003DA38E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEBF48EC28339595003DA38E /* Build configuration list for PBXNativeTarget "MNWSDKFrameTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEBF48ED28339595003DA38E /* Debug */,
+				EEBF48EE28339595003DA38E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEBF48EF28339595003DA38E /* Build configuration list for PBXNativeTarget "MNWSDKFrameTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEBF48F028339595003DA38E /* Debug */,
+				EEBF48F128339595003DA38E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EEBF48B228339594003DA38E /* Project object */;
+}

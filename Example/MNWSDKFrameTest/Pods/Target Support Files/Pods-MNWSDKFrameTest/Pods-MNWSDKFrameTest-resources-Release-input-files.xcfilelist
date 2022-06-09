@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-MNWSDKFrameTest/Pods-MNWSDKFrameTest-resources.sh
+${PODS_ROOT}/../../MNWSDK/MNWSDK/ShareSDK/PlatformSDK/FacebookSDK/FacebookSDKStrings.bundle
+${PODS_ROOT}/../../MNWSDK/MNWSDK/ShareSDK/PlatformSDK/GoogleSDK/GoogleSignIn.bundle

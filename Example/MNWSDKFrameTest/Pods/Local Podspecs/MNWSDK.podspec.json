@@ -1,0 +1,38 @@
+{
+  "name": "MNWSDK",
+  "version": "1.0.O",
+  "summary": "聚合登录SDK",
+  "homepage": "https://mini1.cn",
+  "license": {
+    "type": "MIT",
+    "file": "cm_moudle_account/LICENSE"
+  },
+  "authors": {
+    "tanzhiwu": "tanzhiwu@mini1.cn"
+  },
+  "source": {
+    "git": "git@gitlab.codemao.cn:mobile-app/ios/cmaccountsdk.git",
+    "tag": "1.0.O"
+  },
+  "requires_arc": true,
+  "static_framework": true,
+  "platforms": {
+    "ios": "12.0"
+  },
+  "frameworks": [
+    "Foundation",
+    "UIKit"
+  ],
+  "source_files": "MNWSDK/**/*.{h,m}",
+  "prefix_header_contents": "#import \"MNWSDKHeader.h\"",
+  "pod_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "public_header_files": [
+    "MNWSDK/**/{MNWSDK,MNWLoginParam,MNWVerCodeParam,MNWBindingVerCodeParam,MNWBindAccoutParam}.h",
+    "MNWSDK/**/{MNWUser,MNWToken,MNWSDKTypeDefine,MNWSDKRegister}.h"
+  ]
+}

@@ -1,0 +1,6 @@
+framework module AppleComm {
+  umbrella header "AppleComm-umbrella.h"
+
+  export *
+  module * { export * }
+}

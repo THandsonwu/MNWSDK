@@ -1,0 +1,38 @@
+//
+//  PrefixHeader.pch
+//  MNWSDKFrameTest
+//
+//  Created by 谭志武 on 2022/5/17.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "AppDefines.h"
+#import "MNConstants.h"
+
+#import "MNWSDKFrameTest-Swift.h"
+
+#define MAS_SHORTHAND
+#import "Masonry.h"
+
+#import "AFNetworking.h"
+#import "SVProgressHUD.h"
+#import "YYModel.h"
+#import "MJExtension.h"
+
+#import <MNWSDK/MNWSDK.h>
+
+#import "DeviceUtils.h"
+#import "NSObject+Utils.h"
+#import "NSData+Utils.h"
+#import "NSDictionary+Utils.h"
+#import "NSString+Utils.h"
+#import "UIImage+Utils.h"
+#import "UIViewController+Extends.h"
+#import "MNAccountManager.h"
+#import "NSObject+Utils.h"
+
+#endif /* PrefixHeader_pch */
