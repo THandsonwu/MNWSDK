@@ -45,7 +45,7 @@ Pod::Spec.new do |s|
           ssp.vendored_frameworks = 'MNWSDK/PlatformComm/FacebookComm.framework'
           ssp.library = 'c++', 'stdc++','z'
           ssp.ios.weak_framework = 'Accelerate', 'Accounts', 'CoreLocation', 'Social', 'Security', 'QuartzCore', 'CoreGraphics','UIKit', 'AudioToolbox','AuthenticationServices','SafariServices','CoreServices'
-          ssp.resources = 'MNWSDK/PlatformSDK/FacebookSDK/*.bundle'
+          #ssp.resources = 'MNWSDK/PlatformSDK/FacebookSDK/*.bundle'
           ssp.dependency 'mini_mnwsdk/MNWSDK'
           ssp.dependency 'FBSDKLoginKit'
           
@@ -54,7 +54,7 @@ Pod::Spec.new do |s|
       sp.subspec 'GooglePlus' do |ssp|
           ssp.vendored_frameworks = 'MNWSDK/PlatformComm/GooglePlusComm.framework'
           ssp.ios.weak_framework = 'LocalAuthentication'
-          ssp.resources = 'MNWSDK/PlatformSDK/GoogleSDK/*.bundle'
+          #ssp.resources = 'MNWSDK/PlatformSDK/GoogleSDK/*.bundle'
           ssp.dependency 'mini_mnwsdk/MNWSDK'
           ssp.dependency 'GoogleSignIn'
           ssp.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
