@@ -27,8 +27,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Taki' => 'tanzhiwu@mini1.cn' }
   s.source           = { :git => 'https://github.com/THandsonwu/MNWSDK.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-  s.plaform = :ios
+  #s.plaform = :ios
   s.ios.deployment_target = '12.0'
   s.default_subspec = 'MNWSDK'
   
