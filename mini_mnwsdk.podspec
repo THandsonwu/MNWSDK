@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/THandsonwu/MNWSDK.git', :tag => s.version.to_s }
   #s.plaform = :ios
   s.ios.deployment_target = '12.0'
-  s.default_subspec = 'MNWSDK'
+  s.default_subspecs = 'MNWSDK'
   
   #主模块
   s.subspec 'MNWSDK' do |sp|
