@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'mini_mnwsdk'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'MNWSDK is use to easily login with mini1 and other plaforms'
 
 # This description is used to generate tags and improve search results.
