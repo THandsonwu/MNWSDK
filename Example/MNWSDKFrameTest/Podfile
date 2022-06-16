@@ -15,6 +15,12 @@ target 'MNWSDKFrameTest' do
   pod 'Masonry'
   pod 'IQKeyboardManager'
 
+  # Pod style use MNWSDK
+  #pod 'mini_mnwsdk/MNWSDK'
+  #pod 'mini_mnwsdk/MNWSDKPlatforms/Facebook'
+  #pod 'mini_mnwsdk/MNWSDKPlatforms/GooglePlus'
+  #pod 'mini_mnwsdk/MNWSDKPlatforms/Apple'
+
 end
 
 

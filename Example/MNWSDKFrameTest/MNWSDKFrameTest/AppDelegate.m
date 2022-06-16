@@ -24,27 +24,20 @@
 
 //64961101293-acdj2rrf77cn1n81fk4srh0s6242o4mp.apps.googleusercontent.com 公用
 //cn.mini1.MNWSDKFrameTest 135193995470-ajo0t4pkm1sn9r6q73n812j0vvfkvv4n.apps.googleusercontent.com
-//10870001 hl4c8bcvrwoje1aylhuuodybq82uzpvg
 //10870003 5voia6l2amee816i6zxonlgkhmerfd4o
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 
     [MNWSDK setEnableDebug:YES];
-    [MNWSDK registerMNWSDKWithTenementId:@"10870001" tenementKey:@"hl4c8bcvrwoje1aylhuuodybq82uzpvg" deviceId:[DeviceUtils deviceId] onResult:^(MNWCode code, NSString * _Nullable msg) {
-        if (code == MNWCode_INIT_SUCCESS) {
-            //初始化成功
-        } else {
-            [SVProgressHUD showErrorWithStatus:msg];
-        }
-    }];
+    [MNWSDK registerMNWSDKWithTenementId:@"10870003" tenementKey:@"5voia6l2amee816i6zxonlgkhmerfd4o" deviceId:[DeviceUtils deviceId]];
     
 
     [[FBSDKApplicationDelegate sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
     [FBSDKProfile enableUpdatesOnAccessTokenChange:YES];
     //499909370349330  d331c2172a6968644127fccd87a9ffe8
     [MNWSDK registerLoginPlatforms:^(MNWSDKRegister * _Nonnull platformsRegister) {
-        [platformsRegister setupFacebookLoginWithAppkey:@"408274831162376" appSecret:@"17fcc092b80035f84470a897b5c06d81" displayName:@"MNWSDK"];
-        [platformsRegister setupGoogleLoginByClientID:@"64961101293-acdj2rrf77cn1n81fk4srh0s6242o4mp.apps.googleusercontent.com" clientSecret:@"" redirectUrl:@"http://localhost"];
+        [platformsRegister setupFacebookLoginWithAppkey:@"499909370349330" appSecret:@"d331c2172a6968644127fccd87a9ffe8" displayName:@"MNWSDK"];
+        [platformsRegister setupGoogleLoginByClientID:@"135193995470-ajo0t4pkm1sn9r6q73n812j0vvfkvv4n.apps.googleusercontent.com" clientSecret:@"" redirectUrl:@"http://localhost"];
        
     }];
    

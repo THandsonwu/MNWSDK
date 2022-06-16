@@ -1,0 +1,6 @@
+framework module FacebookComm {
+  umbrella header "FacebookComm-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -11,20 +11,8 @@
 		EE81976E284207190036FFEE /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE81976D284207190036FFEE /* LocalAuthentication.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		EEA346432845B5D00007297E /* ResetPswViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA346412845B5D00007297E /* ResetPswViewController.m */; };
 		EEA346442845B5D00007297E /* ResetPswViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEA346422845B5D00007297E /* ResetPswViewController.xib */; };
-		EEBE9A0D2850AE9A004E8E9D /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBE99FD2850AE9A004E8E9D /* FBSDKLoginKit.framework */; };
 		EEBE9A0E2850AE9A004E8E9D /* FacebookSDKStrings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EEBE99FE2850AE9A004E8E9D /* FacebookSDKStrings.bundle */; };
-		EEBE9A0F2850AE9A004E8E9D /* FBAEMKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBE99FF2850AE9A004E8E9D /* FBAEMKit.framework */; };
-		EEBE9A102850AE9A004E8E9D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBE9A002850AE9A004E8E9D /* FBSDKCoreKit.framework */; };
-		EEBE9A112850AE9A004E8E9D /* FBSDKCoreKit_Basics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBE9A012850AE9A004E8E9D /* FBSDKCoreKit_Basics.framework */; };
-		EEBE9A122850AE9A004E8E9D /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBE9A032850AE9A004E8E9D /* GTMSessionFetcher.framework */; };
-		EEBE9A132850AE9A004E8E9D /* GTMAppAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBE9A042850AE9A004E8E9D /* GTMAppAuth.framework */; };
-		EEBE9A142850AE9A004E8E9D /* AppAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBE9A052850AE9A004E8E9D /* AppAuth.framework */; };
 		EEBE9A152850AE9A004E8E9D /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EEBE9A062850AE9A004E8E9D /* GoogleSignIn.bundle */; };
-		EEBE9A162850AE9A004E8E9D /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBE9A072850AE9A004E8E9D /* GoogleSignIn.framework */; };
-		EEBE9A172850AE9A004E8E9D /* AppleComm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBE9A092850AE9A004E8E9D /* AppleComm.framework */; };
-		EEBE9A182850AE9A004E8E9D /* GooglePlusComm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBE9A0A2850AE9A004E8E9D /* GooglePlusComm.framework */; };
-		EEBE9A192850AE9A004E8E9D /* FacebookComm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBE9A0B2850AE9A004E8E9D /* FacebookComm.framework */; };
-		EEBE9A1A2850AE9B004E8E9D /* MNWSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBE9A0C2850AE9A004E8E9D /* MNWSDK.framework */; };
 		EEBF48BF28339594003DA38E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBF48BE28339594003DA38E /* AppDelegate.m */; };
 		EEBF48C528339594003DA38E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBF48C428339594003DA38E /* ViewController.m */; };
 		EEBF48C828339594003DA38E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEBF48C628339594003DA38E /* Main.storyboard */; };
@@ -69,7 +57,18 @@
 		EEBF4A06283659B7003DA38E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBF4A05283659B7003DA38E /* libz.tbd */; };
 		EEBF4A08283659C0003DA38E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBF4A07283659C0003DA38E /* libsqlite3.tbd */; };
 		EEBF4A0A283659CE003DA38E /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBF4A09283659CE003DA38E /* SafariServices.framework */; };
-		EEBF4A0C283659D7003DA38E /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBF4A0B283659D7003DA38E /* Accelerate.framework */; };
+		EEFA186D285AD85900E097D7 /* MNWSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFA186C285AD85900E097D7 /* MNWSDK.framework */; };
+		EEFA1871285AD8C600E097D7 /* FacebookComm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFA186E285AD8C600E097D7 /* FacebookComm.framework */; };
+		EEFA1873285AD8C600E097D7 /* GooglePlusComm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFA186F285AD8C600E097D7 /* GooglePlusComm.framework */; };
+		EEFA1875285AD8C600E097D7 /* AppleComm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFA1870285AD8C600E097D7 /* AppleComm.framework */; };
+		EEFA187C285AD8D600E097D7 /* FBAEMKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFA1878285AD8D600E097D7 /* FBAEMKit.framework */; };
+		EEFA187E285AD8D600E097D7 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFA1879285AD8D600E097D7 /* FBSDKLoginKit.framework */; };
+		EEFA1880285AD8D700E097D7 /* FBSDKCoreKit_Basics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFA187A285AD8D600E097D7 /* FBSDKCoreKit_Basics.framework */; };
+		EEFA1882285AD8D700E097D7 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFA187B285AD8D600E097D7 /* FBSDKCoreKit.framework */; };
+		EEFA1884285AD8E600E097D7 /* AppAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBE999F284F4C6A004E8E9D /* AppAuth.framework */; };
+		EEFA1886285AD8E600E097D7 /* GTMAppAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBE999D284F4C6A004E8E9D /* GTMAppAuth.framework */; };
+		EEFA1888285AD8E600E097D7 /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBE999E284F4C6A004E8E9D /* GTMSessionFetcher.framework */; };
+		EEFA188B285AD8E600E097D7 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFA188A285AD8E600E097D7 /* GoogleSignIn.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -201,6 +200,15 @@
 		EEBF4A07283659C0003DA38E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		EEBF4A09283659CE003DA38E /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		EEBF4A0B283659D7003DA38E /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		EEFA186C285AD85900E097D7 /* MNWSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MNWSDK.framework; path = MNWSDKFrameTest/ThirdLib/MNWSDK/MNWSDK.framework; sourceTree = "<group>"; };
+		EEFA186E285AD8C600E097D7 /* FacebookComm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookComm.framework; path = MNWSDKFrameTest/ThirdLib/MNWSDK/PlatformComm/FacebookComm.framework; sourceTree = "<group>"; };
+		EEFA186F285AD8C600E097D7 /* GooglePlusComm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlusComm.framework; path = MNWSDKFrameTest/ThirdLib/MNWSDK/PlatformComm/GooglePlusComm.framework; sourceTree = "<group>"; };
+		EEFA1870285AD8C600E097D7 /* AppleComm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleComm.framework; path = MNWSDKFrameTest/ThirdLib/MNWSDK/PlatformComm/AppleComm.framework; sourceTree = "<group>"; };
+		EEFA1878285AD8D600E097D7 /* FBAEMKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBAEMKit.framework; path = MNWSDKFrameTest/ThirdLib/MNWSDK/PlatformSDK/FacebookSDK/FBAEMKit.framework; sourceTree = "<group>"; };
+		EEFA1879285AD8D600E097D7 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = MNWSDKFrameTest/ThirdLib/MNWSDK/PlatformSDK/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		EEFA187A285AD8D600E097D7 /* FBSDKCoreKit_Basics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit_Basics.framework; path = MNWSDKFrameTest/ThirdLib/MNWSDK/PlatformSDK/FacebookSDK/FBSDKCoreKit_Basics.framework; sourceTree = "<group>"; };
+		EEFA187B285AD8D600E097D7 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = MNWSDKFrameTest/ThirdLib/MNWSDK/PlatformSDK/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		EEFA188A285AD8E600E097D7 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignIn.framework; path = MNWSDKFrameTest/ThirdLib/MNWSDK/PlatformSDK/GoogleSDK/GoogleSignIn.framework; sourceTree = "<group>"; };
 		F1ED6C96708E4BD97A4EA251 /* Pods-MNWSDKFrameTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MNWSDKFrameTest.release.xcconfig"; path = "Target Support Files/Pods-MNWSDKFrameTest/Pods-MNWSDKFrameTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -209,26 +217,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEBE9A112850AE9A004E8E9D /* FBSDKCoreKit_Basics.framework in Frameworks */,
+				EEFA1884285AD8E600E097D7 /* AppAuth.framework in Frameworks */,
+				EEFA186D285AD85900E097D7 /* MNWSDK.framework in Frameworks */,
 				EE81976E284207190036FFEE /* LocalAuthentication.framework in Frameworks */,
-				EEBF4A0C283659D7003DA38E /* Accelerate.framework in Frameworks */,
-				EEBE9A122850AE9A004E8E9D /* GTMSessionFetcher.framework in Frameworks */,
-				EEBE9A0D2850AE9A004E8E9D /* FBSDKLoginKit.framework in Frameworks */,
-				EEBE9A182850AE9A004E8E9D /* GooglePlusComm.framework in Frameworks */,
-				EEBE9A132850AE9A004E8E9D /* GTMAppAuth.framework in Frameworks */,
-				EEBE9A102850AE9A004E8E9D /* FBSDKCoreKit.framework in Frameworks */,
-				EEBE9A162850AE9A004E8E9D /* GoogleSignIn.framework in Frameworks */,
+				EEFA1886285AD8E600E097D7 /* GTMAppAuth.framework in Frameworks */,
+				EEFA1871285AD8C600E097D7 /* FacebookComm.framework in Frameworks */,
 				EEBF4A0A283659CE003DA38E /* SafariServices.framework in Frameworks */,
+				EEFA1880285AD8D700E097D7 /* FBSDKCoreKit_Basics.framework in Frameworks */,
 				EEBF4A08283659C0003DA38E /* libsqlite3.tbd in Frameworks */,
-				EEBE9A0F2850AE9A004E8E9D /* FBAEMKit.framework in Frameworks */,
+				EEFA187C285AD8D600E097D7 /* FBAEMKit.framework in Frameworks */,
 				EEBF4A06283659B7003DA38E /* libz.tbd in Frameworks */,
-				EEBE9A142850AE9A004E8E9D /* AppAuth.framework in Frameworks */,
+				EEFA1888285AD8E600E097D7 /* GTMSessionFetcher.framework in Frameworks */,
+				EEFA187E285AD8D600E097D7 /* FBSDKLoginKit.framework in Frameworks */,
 				EEBF4A04283659AB003DA38E /* libc++.tbd in Frameworks */,
-				EEBE9A172850AE9A004E8E9D /* AppleComm.framework in Frameworks */,
-				EEBE9A1A2850AE9B004E8E9D /* MNWSDK.framework in Frameworks */,
+				EEFA1882285AD8D700E097D7 /* FBSDKCoreKit.framework in Frameworks */,
+				EEFA1875285AD8C600E097D7 /* AppleComm.framework in Frameworks */,
+				EEFA188B285AD8E600E097D7 /* GoogleSignIn.framework in Frameworks */,
+				EEFA1873285AD8C600E097D7 /* GooglePlusComm.framework in Frameworks */,
 				EEBF49CB2833B5C7003DA38E /* AuthenticationServices.framework in Frameworks */,
 				4590E142002C4B82968CEE26 /* Pods_MNWSDKFrameTest.framework in Frameworks */,
-				EEBE9A192850AE9A004E8E9D /* FacebookComm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +268,15 @@
 		7A0031DABA7DA7B6DEF427CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EEFA188A285AD8E600E097D7 /* GoogleSignIn.framework */,
+				EEFA1878285AD8D600E097D7 /* FBAEMKit.framework */,
+				EEFA187A285AD8D600E097D7 /* FBSDKCoreKit_Basics.framework */,
+				EEFA187B285AD8D600E097D7 /* FBSDKCoreKit.framework */,
+				EEFA1879285AD8D600E097D7 /* FBSDKLoginKit.framework */,
+				EEFA1870285AD8C600E097D7 /* AppleComm.framework */,
+				EEFA186E285AD8C600E097D7 /* FacebookComm.framework */,
+				EEFA186F285AD8C600E097D7 /* GooglePlusComm.framework */,
+				EEFA186C285AD85900E097D7 /* MNWSDK.framework */,
 				EEBE999F284F4C6A004E8E9D /* AppAuth.framework */,
 				EEBE999D284F4C6A004E8E9D /* GTMAppAuth.framework */,
 				EEBE999E284F4C6A004E8E9D /* GTMSessionFetcher.framework */,
@@ -1007,6 +1023,7 @@
 					"$(PROJECT_DIR)/MNWSDKFrameTest/ThirdLib/MNWSDK/PlatformSDK/FacebookSDK",
 					"$(PROJECT_DIR)/MNWSDKFrameTest/ThirdLib/MNWSDK/PlatformSDK/GoogleSDK",
 					"$(PROJECT_DIR)/MNWSDKFrameTest/ThirdLib/MNWSDK",
+					"$(PROJECT_DIR)/MNWSDKFrameTest/ThirdLib/MNWSDK/PlatformComm",
 				);
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/MNWSDKFrameTest/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1057,6 +1074,7 @@
 					"$(PROJECT_DIR)/MNWSDKFrameTest/ThirdLib/MNWSDK/PlatformSDK/FacebookSDK",
 					"$(PROJECT_DIR)/MNWSDKFrameTest/ThirdLib/MNWSDK/PlatformSDK/GoogleSDK",
 					"$(PROJECT_DIR)/MNWSDKFrameTest/ThirdLib/MNWSDK",
+					"$(PROJECT_DIR)/MNWSDKFrameTest/ThirdLib/MNWSDK/PlatformComm",
 				);
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/MNWSDKFrameTest/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;

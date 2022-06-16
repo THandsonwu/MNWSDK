@@ -8,6 +8,7 @@
 ## Example
 
 To run the example project, clone the repo,  It already has static library import. But if you want to import pod, add pod dependencies as follows and run `pod install` from the Example directory first.
+For specific access methods, see Example...
 
 ## Requirements
 
