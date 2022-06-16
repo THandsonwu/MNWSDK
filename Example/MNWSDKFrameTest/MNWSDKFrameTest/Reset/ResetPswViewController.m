@@ -34,7 +34,7 @@ typedef NS_ENUM(NSUInteger, ResetType) {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.resetType = ResetTypeAccount;
-    self.resetWay = MNWResetWayePhone;
+    self.resetWay = MNWResetWayPhone;
     
 
 }
@@ -56,9 +56,9 @@ typedef NS_ENUM(NSUInteger, ResetType) {
 }
 - (IBAction)changeVerifyCodeType:(UISegmentedControl *)sender {
     if (sender.selectedSegmentIndex == 0) {
-        self.resetWay = MNWResetWayePhone;
+        self.resetWay = MNWResetWayPhone;
     } else {
-        self.resetWay = MNWResetWayeEmail;
+        self.resetWay = MNWResetWayEmail;
     }
 }
 - (IBAction)sendVerifyCode:(UIButton *)sender {
