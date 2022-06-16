@@ -7,7 +7,7 @@
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To run the example project, clone the repo,  It already has static library import. But if you want to import pod, add pod dependencies as follows and run `pod install` from the Example directory first.
 
 ## Requirements
 
@@ -17,7 +17,14 @@ MNWSDK is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'MNWSDK'
+pod 'mini_mnwsdk/MNWSDK'
+```
+If you need another login platform access method, you just need to add the 
+following line to your Podfile:
+```ruby
+  pod 'mini_mnwsdk/MNWSDKPlatforms/Facebook'
+  pod 'mini_mnwsdk/MNWSDKPlatforms/GooglePlus'
+  pod 'mini_mnwsdk/MNWSDKPlatforms/Apple'
 ```
 
 ## Author
