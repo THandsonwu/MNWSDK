@@ -41,9 +41,8 @@
     self.phoneCodeType = MNWSendVerCodeType_bind_phone;
     self.emailCodeType = MNWSendVerCodeType_bind_email;
     
-    [MNWSDK queryBindAccountInfoWithAccount:self.userIDLB.text onResult:^(MNWCode code, NSString * _Nullable msg) {
-    } completionHandler:^(id  _Nullable responseObject) {
-        if ([responseObject isDictionary]) {
+    [MNWSDK queryBindAccountInfoWithAccount:self.userIDLB.text completionHandler:^(MNWCode code, NSString * _Nullable msg, id  _Nullable responseObject) {
+        if ([responseObject isDictionary] && [responseObject[@"thirdInfos"] isValidArray]) {
             for (NSDictionary *dict in responseObject[@"thirdInfos"]) {
                 if ([dict[@"mergeChannelId"] integerValue] == 7606710) {
                     [self.binFaceBookBtn setTitle:@"解绑Facebook" forState:UIControlStateNormal];
@@ -68,7 +67,7 @@
 }
 #pragma mark -- 手机
 - (IBAction)getPhoneVerifyCode:(UIButton *)sender {
-    MNWBindingVerCodeParam *param = [[MNWBindingVerCodeParam alloc] initWithAccount:self.userIDLB.text sendVerCodeType:MNWSendVerCodeType_bind_phone phone:self.phoneTF.text phoneAreaCode:self.phoneAreaTF.text];
+    MNWBindingVerCodeParam *param = [[MNWBindingVerCodeParam alloc] initWithAccount:self.userIDLB.text sendVerCodeType:self.phoneCodeType phone:self.phoneTF.text phoneAreaCode:self.phoneAreaTF.text];
     [MNWSDK getBindAccountVerifyCode:param onResult:^(MNWCode code, NSString * _Nullable msg) {
         //需要国外号码 验证OK
     }];
@@ -113,14 +112,14 @@
 #pragma mark -- 第三方
 - (IBAction)binOrUnbinFacebook:(UIButton *)sender {
     if ([sender.currentTitle isEqualToString:@"绑定Facebook"]) {
-        [MNWSDK authorBindAccount:self.userIDLB.text bindType:MNWAuthorBindTypeFaceBook onResult:^(MNWCode code, NSString * _Nullable msg) {
+        [MNWSDK thirdBindAccount:self.userIDLB.text bindType:MNWThirdBindTypeFaceBook onResult:^(MNWCode code, NSString * _Nullable msg) {
             [self showToast:msg];
             if (code == MNWCode_BIND_SUCCESS) {
                 [sender setTitle:@"解绑Facebook" forState:UIControlStateNormal];
             }
         }];
     } else {
-        [MNWSDK authorUnBindAccount:self.userIDLB.text unBindType:MNWAuthorBindTypeFaceBook onResult:^(MNWCode code, NSString * _Nullable msg) {
+        [MNWSDK thirdUnBindAccount:self.userIDLB.text unBindType:MNWThirdBindTypeFaceBook onResult:^(MNWCode code, NSString * _Nullable msg) {
             [self showToast:msg];
             if (code == MNWCode_UNBIND_SUCCESS) {
                 [sender setTitle:@"绑定Facebook" forState:UIControlStateNormal];
@@ -131,14 +130,14 @@
 }
 - (IBAction)binOrUnbinGoogle:(UIButton *)sender {
     if ([sender.currentTitle isEqualToString:@"绑定Google"]) {
-        [MNWSDK authorBindAccount:self.userIDLB.text bindType:MNWAuthorBindTypeGoogle onResult:^(MNWCode code, NSString * _Nullable msg) {
+        [MNWSDK thirdBindAccount:self.userIDLB.text bindType:MNWThirdBindTypeGoogle onResult:^(MNWCode code, NSString * _Nullable msg) {
             [self showToast:msg];
             if (code == MNWCode_BIND_SUCCESS) {
                 [sender setTitle:@"解绑Google" forState:UIControlStateNormal];
             }
         }];
     } else {
-        [MNWSDK authorUnBindAccount:self.userIDLB.text unBindType:MNWAuthorBindTypeGoogle onResult:^(MNWCode code, NSString * _Nullable msg) {
+        [MNWSDK thirdUnBindAccount:self.userIDLB.text unBindType:MNWThirdBindTypeGoogle onResult:^(MNWCode code, NSString * _Nullable msg) {
             [self showToast:msg];
             if (code == MNWCode_UNBIND_SUCCESS) {
                 [sender setTitle:@"绑定Google" forState:UIControlStateNormal];
@@ -148,14 +147,14 @@
 }
 - (IBAction)binOrUnbinApple:(UIButton *)sender {
     if ([sender.currentTitle isEqualToString:@"绑定Apple"]) {
-        [MNWSDK authorBindAccount:self.userIDLB.text bindType:MNWAuthorBindTypeApple onResult:^(MNWCode code, NSString * _Nullable msg) {
+        [MNWSDK thirdBindAccount:self.userIDLB.text bindType:MNWThirdBindTypeApple onResult:^(MNWCode code, NSString * _Nullable msg) {
             [self showToast:msg];
             if (code == MNWCode_BIND_SUCCESS) {
                 [sender setTitle:@"解绑Apple" forState:UIControlStateNormal];
             }
         }];
     } else {
-        [MNWSDK authorUnBindAccount:self.userIDLB.text unBindType:MNWAuthorBindTypeApple onResult:^(MNWCode code, NSString * _Nullable msg) {
+        [MNWSDK thirdUnBindAccount:self.userIDLB.text unBindType:MNWThirdBindTypeApple onResult:^(MNWCode code, NSString * _Nullable msg) {
             [self showToast:msg];
             if (code == MNWCode_UNBIND_SUCCESS) {
                 [sender setTitle:@"绑定Apple" forState:UIControlStateNormal];

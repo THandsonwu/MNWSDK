@@ -112,7 +112,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)logout:(onResult _Nullable)onResult;
 
 /// 文字密码验证问题对照表
-/// @param lang 当前语言
+/// @param lang 当前语言 "en"为英文
 + (NSArray *)securityQuestions:(NSString *)lang;
 
 #pragma mark -- 绑定/解绑相关接口

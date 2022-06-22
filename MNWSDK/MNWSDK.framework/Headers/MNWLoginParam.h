@@ -31,8 +31,8 @@
 /// 注册邮箱
 @property (nonatomic, strong, readonly) NSString *email;
 
-/// 文字密码问题
-@property (nonatomic, strong, readonly) NSString *securityQuestion;
+/// 文字密码问题Id
+@property (nonatomic, strong, readonly) NSString *securityQuestionId;
 
 /// 文字密码答案
 @property (nonatomic, strong, readonly) NSString *answer;
@@ -67,9 +67,9 @@
 /// 旧迷你号，邮箱账号登录方式
 /// @param loginType .MNWLoginTypeOldAccountQuestion
 /// @param accountNum 旧账号名称，或者旧邮箱账号
-/// @param securityQuestion 密码验证问题
+/// @param securityQuestionId 密码验证问题Id
 /// @param answer 密码验证答案
-- (instancetype)initWithLoginType:(MNWLoginType)loginType accountNum:(NSString *)accountNum securityQuestion:(NSString *)securityQuestion answer:(NSString *)answer;
+- (instancetype)initWithLoginType:(MNWLoginType)loginType accountNum:(NSString *)accountNum securityQuestion:(NSString *)securityQuestionId answer:(NSString *)answer;
 
 @end
 

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'mini_mnwsdk'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'MNWSDK is use to easily login with mini1 and other plaforms'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   s.author           = { 'Taki' => 'tanzhiwu@mini1.cn' }
   s.source           = { :git => 'https://github.com/THandsonwu/MNWSDK.git', :tag => s.version.to_s }
   #s.plaform = :ios
-  s.ios.deployment_target = '12.0'
+  s.ios.deployment_target = '9.0'
   s.default_subspecs = 'MNWSDK'
   
   #主模块

@@ -40,11 +40,12 @@ typedef NS_ENUM(NSUInteger, MNWAuthorBindType) {
 
 typedef NS_ENUM(NSUInteger, MNWVerCodeType) {
     /// 获取手机验证码
-    MNWVerCodeTypePhoneVerCode,
-    /// 获取邮箱验证码
-    MNWVerCodeTypeEmailVerCode,
+    MNWVerCodeTypePhoneVerCode = 1,
     /// 重置密码获取验证码
     MNWVerCodeTypeResetPasswordVerCode,
+    /// 获取邮箱验证码
+    MNWVerCodeTypeEmailVerCode,
+ 
 };
 
 typedef NS_ENUM(NSUInteger, MNWResetWay) {
@@ -58,11 +59,11 @@ typedef NS_ENUM(NSUInteger, MNWSendVerCodeType) {
     /// 绑定手机获取验证码
     MNWSendVerCodeType_bind_phone = 1,
     /// 解绑手机获取验证码
-    MNWSendVerCodeType_unbind_phone,
+    MNWSendVerCodeType_unbind_phone = 2,
     /// 绑定邮箱获取验证码
-    MNWSendVerCodeType_bind_email,
+    MNWSendVerCodeType_bind_email = 3,
     /// 解绑邮箱获取验证码
-    MNWSendVerCodeType_unbind_email,
+    MNWSendVerCodeType_unbind_email = 4,
 };
 
 

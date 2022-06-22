@@ -138,6 +138,17 @@ typedef NS_ENUM(NSUInteger, MNAccountType) {
     MNWLoginParam *loginParam = [[MNWLoginParam alloc] initWithLoginType:MNWLoginTypeApple];
     [MNWSDK loginWithMNWLoginParam:loginParam onResult:^(MNWCode code, NSString * _Nullable msg) {
         [self showToast:msg];
+        //处理msg的示例：
+        if ([msg containsString:@"errorCode"]) {
+            NSArray *strArray = [msg componentsSeparatedByString:@":"];
+            NSString *resultCode = [strArray[1] componentsSeparatedByString:@","].firstObject;
+            NSString *resultMsg = strArray.lastObject;
+            NSDictionary *dict = @{@"resultCode":resultCode, @"resultMsg": resultMsg};
+            NSString *jsonString = dict.toJSONString;
+        } else {
+            NSDictionary *dict = @{@"resultCode":@(code), @"resultMsg": msg};
+            NSString *jsonString = dict.toJSONString;
+        }
     } onLoginResult:^(MNWUser * _Nullable user) {
         NSLog(@"%@",[NSString stringWithFormat:@"%@,%@",user.nickname,user.icon ]);
     } onAuthResult:^(MNWToken * _Nullable token) {
