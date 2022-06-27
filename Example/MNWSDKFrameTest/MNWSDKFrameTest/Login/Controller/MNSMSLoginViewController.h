@@ -10,6 +10,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MNSMSLoginViewController : UIViewController
+//1 = 手机  2 = 邮箱
+@property (nonatomic, assign) NSInteger type;
 
 @end
 

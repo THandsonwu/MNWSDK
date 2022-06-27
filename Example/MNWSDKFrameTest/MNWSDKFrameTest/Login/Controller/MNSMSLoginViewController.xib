@@ -13,6 +13,8 @@
             <connections>
                 <outlet property="phoneAreaTF" destination="QDb-XA-QYd" id="1nG-rR-YGB"/>
                 <outlet property="phoneTF" destination="G4n-7q-eyN" id="mAz-ls-xor"/>
+                <outlet property="titleLB" destination="G1G-0f-KVv" id="MUW-zV-J4V"/>
+                <outlet property="vcodeBtn" destination="voB-Vc-HRY" id="3Ag-5S-JTf"/>
                 <outlet property="verifyCodeTF" destination="gCO-We-8OG" id="L4a-Eg-e3l"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

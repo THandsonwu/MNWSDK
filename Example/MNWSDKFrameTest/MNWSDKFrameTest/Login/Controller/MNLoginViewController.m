@@ -33,6 +33,23 @@ typedef NS_ENUM(NSUInteger, MNAccountType) {
 - (IBAction)resetPassword:(id)sender {
     [self.navigationController pushViewController:[ResetPswViewController new] animated:YES];
 }
+- (IBAction)quickLogin:(id)sender {
+    MNWLoginParam *param = [[MNWLoginParam alloc] initWithLoginType:MNWLoginTypeQuickRegAccount];
+    [MNWSDK loginWithMNWLoginParam:param onResult:^(MNWCode code, NSString * _Nullable msg) {
+        [self showToast:msg];
+    } onLoginResult:nil onAuthResult:^(MNWToken * _Nullable token) {
+        if (token) {
+            [self loginsuccessWithToken:token account:self.accountTextField.text];
+        }
+    }];
+    //[self resetQuickRegpwd];
+}
+//重置快速注册密码
+- (void)resetQuickRegpwd {
+    [MNWSDK setPasswordForQuickRegisterWithAccount:@"FC330752107217633280" password:@"892400yy" onResult:^(MNWCode code, NSString * _Nullable msg) {
+        [self showToast:msg];
+    }];
+}
 
 - (IBAction)changeNormalLogin:(id)sender {
     self.accountType = MNAccountTypeUIN;
@@ -80,13 +97,21 @@ typedef NS_ENUM(NSUInteger, MNAccountType) {
             break;
         case MNAccountTypeAccount:
         {
-            [MNWSDK registerAccountWithAccount:self.accountTextField.text password:self.pwdTextField.text onResult:^(MNWCode code, NSString * _Nullable msg) {
+//            [MNWSDK registerAccountWithAccount:self.accountTextField.text password:self.pwdTextField.text onResult:^(MNWCode code, NSString * _Nullable msg) {
+//                [self showToast:msg];
+//            } onAuthResult:^(MNWToken * _Nullable token) {
+//                if (token) {
+//                    [self loginsuccessWithToken:token account:self.accountTextField.text];
+//                }
+//               
+//            }];
+            MNWLoginParam *param = [[MNWLoginParam alloc] initWithLoginType:MNWLoginTypeNewAccount accountNum:self.accountTextField.text passWord:self.pwdTextField.text];
+            [MNWSDK loginWithMNWLoginParam:param onResult:^(MNWCode code, NSString * _Nullable msg) {
                 [self showToast:msg];
-            } onAuthResult:^(MNWToken * _Nullable token) {
+            } onLoginResult:nil onAuthResult:^(MNWToken * _Nullable token) {
                 if (token) {
                     [self loginsuccessWithToken:token account:self.accountTextField.text];
                 }
-               
             }];
         }
             
@@ -118,7 +143,7 @@ typedef NS_ENUM(NSUInteger, MNAccountType) {
         NSLog(@"%@",[NSString stringWithFormat:@"%@,%@",user.nickname,user.icon ]);
     } onAuthResult:^(MNWToken * _Nullable token) {
         if (token) {
-            [self loginsuccessWithToken:token account:self.accountTextField.text];
+            [self loginsuccessWithToken:token account:nil];
         }
     }];
 }
@@ -130,7 +155,7 @@ typedef NS_ENUM(NSUInteger, MNAccountType) {
         NSLog(@"%@",[NSString stringWithFormat:@"%@,%@",user.nickname,user.icon ]);
     } onAuthResult:^(MNWToken * _Nullable token) {
         if (token) {
-            [self loginsuccessWithToken:token account:self.accountTextField.text];
+            [self loginsuccessWithToken:token account:nil];
         }
     }];
 }
@@ -153,14 +178,21 @@ typedef NS_ENUM(NSUInteger, MNAccountType) {
         NSLog(@"%@",[NSString stringWithFormat:@"%@,%@",user.nickname,user.icon ]);
     } onAuthResult:^(MNWToken * _Nullable token) {
         if (token) {
-            [self loginsuccessWithToken:token account:self.accountTextField.text];
+            [self loginsuccessWithToken:token account:nil];
         }
     }];
 }
 
 
 - (IBAction)smsLogin:(id)sender {
-    [self.navigationController pushViewController:[MNSMSLoginViewController new] animated:YES];
+    MNSMSLoginViewController *smsVC = [MNSMSLoginViewController new];
+    smsVC.type = 1;
+    [self.navigationController pushViewController:smsVC animated:YES];
+}
+- (IBAction)emailLogin:(id)sender {
+    MNSMSLoginViewController *emailVC = [MNSMSLoginViewController new];
+    emailVC.type = 2;
+    [self.navigationController pushViewController:emailVC animated:YES];
 }
 
 - (void)loginsuccessWithToken:(MNWToken *)token account:(NSString *)account {

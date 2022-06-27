@@ -50,7 +50,7 @@
                     <rect key="frame" x="15" y="708" width="384" height="54"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5NA-SX-MXK">
-                            <rect key="frame" x="0.0" y="0.0" width="85" height="54"/>
+                            <rect key="frame" x="0.0" y="0.0" width="65" height="54"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" image="facebook"/>
                             <connections>
@@ -58,7 +58,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jge-3c-LA2">
-                            <rect key="frame" x="100" y="0.0" width="84.5" height="54"/>
+                            <rect key="frame" x="80" y="0.0" width="64.5" height="54"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" image="google"/>
                             <connections>
@@ -66,15 +66,23 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ofm-LV-CKP">
-                            <rect key="frame" x="199.5" y="0.0" width="85" height="54"/>
+                            <rect key="frame" x="159.5" y="0.0" width="65" height="54"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" image="ico_login_apple"/>
                             <connections>
                                 <action selector="appleLogin:" destination="-1" eventType="touchUpInside" id="KWo-wW-BKf"/>
                             </connections>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwm-6A-ExB">
+                            <rect key="frame" x="239.5" y="0.0" width="64.5" height="54"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="email"/>
+                            <connections>
+                                <action selector="emailLogin:" destination="-1" eventType="touchUpInside" id="AmH-tS-OaL"/>
+                            </connections>
+                        </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ihs-9B-L8n">
-                            <rect key="frame" x="299.5" y="0.0" width="84.5" height="54"/>
+                            <rect key="frame" x="319" y="0.0" width="65" height="54"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" image="ico_login_sms"/>
                             <connections>
@@ -162,6 +170,15 @@
                         <action selector="resetPassword:" destination="-1" eventType="touchUpInside" id="aqP-E3-iLE"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fc2-Tx-eTG">
+                    <rect key="frame" x="143" y="326" width="81.5" height="31"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="重置密码"/>
+                    <buttonConfiguration key="configuration" style="gray" title="快速登录"/>
+                    <connections>
+                        <action selector="quickLogin:" destination="-1" eventType="touchUpInside" id="ilo-2R-5iK"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -176,10 +193,13 @@
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="5cr-d0-djl" secondAttribute="bottom" constant="100" id="CTE-G0-T4Y"/>
                 <constraint firstItem="4al-kX-uxB" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="44" id="Ik1-4S-zed"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="HqR-nZ-a0N" secondAttribute="trailing" constant="44" id="NgZ-Lb-yKX"/>
+                <constraint firstItem="fc2-Tx-eTG" firstAttribute="centerY" secondItem="8Ba-6B-Ho9" secondAttribute="centerY" id="OCP-9H-K5Q"/>
                 <constraint firstItem="DKh-hT-lDP" firstAttribute="leading" secondItem="foT-II-Bm4" secondAttribute="trailing" constant="10" id="PUp-Bc-Zar"/>
                 <constraint firstItem="DKh-hT-lDP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Pz3-aK-Edx"/>
+                <constraint firstItem="fc2-Tx-eTG" firstAttribute="leading" secondItem="8Ba-6B-Ho9" secondAttribute="trailing" constant="14" id="WOJ-da-d94"/>
                 <constraint firstItem="tTS-6s-mwa" firstAttribute="height" secondItem="xRq-LC-Gqo" secondAttribute="height" multiplier="1.03333" id="XV7-Eq-qFF"/>
                 <constraint firstItem="5cr-d0-djl" firstAttribute="top" secondItem="DKh-hT-lDP" secondAttribute="bottom" constant="20" id="YJu-We-et3"/>
+                <constraint firstItem="fc2-Tx-eTG" firstAttribute="width" secondItem="8Ba-6B-Ho9" secondAttribute="width" multiplier="0.958824" id="YzH-b1-xsg"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="tTS-6s-mwa" secondAttribute="trailing" constant="20" id="aRr-54-f9y"/>
                 <constraint firstItem="xRq-LC-Gqo" firstAttribute="leading" secondItem="We6-q7-a72" secondAttribute="trailing" constant="10" id="fFD-JU-x8X"/>
                 <constraint firstItem="s2m-oU-5TX" firstAttribute="top" secondItem="xRq-LC-Gqo" secondAttribute="bottom" constant="20" id="fUh-1V-1nc"/>
@@ -192,6 +212,7 @@
                 <constraint firstItem="foT-II-Bm4" firstAttribute="centerY" secondItem="DKh-hT-lDP" secondAttribute="centerY" id="q71-dx-0Li"/>
                 <constraint firstItem="kps-0c-f6b" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="44" id="rG7-O5-azp"/>
                 <constraint firstItem="kps-0c-f6b" firstAttribute="top" secondItem="4al-kX-uxB" secondAttribute="bottom" constant="10" id="sos-zl-UiN"/>
+                <constraint firstItem="fc2-Tx-eTG" firstAttribute="height" secondItem="8Ba-6B-Ho9" secondAttribute="height" id="ts2-bz-PCd"/>
                 <constraint firstItem="xRq-LC-Gqo" firstAttribute="top" secondItem="8Ba-6B-Ho9" secondAttribute="bottom" constant="15" id="tvM-nq-zkE"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="kps-0c-f6b" secondAttribute="trailing" constant="44" id="u1t-Ks-Cl7"/>
                 <constraint firstItem="s2m-oU-5TX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xUa-PP-Cok"/>
@@ -201,6 +222,7 @@
         </view>
     </objects>
     <resources>
+        <image name="email" width="40" height="40"/>
         <image name="facebook" width="40" height="40"/>
         <image name="google" width="40" height="40"/>
         <image name="ico_line_left" width="80" height="1"/>

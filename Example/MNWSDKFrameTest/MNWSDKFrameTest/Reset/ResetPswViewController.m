@@ -38,6 +38,12 @@ typedef NS_ENUM(NSUInteger, ResetType) {
     
 
 }
+- (IBAction)validationCode:(id)sender {
+    [MNWSDK validationAccountWithUin:self.accountTF.text email:self.emailTF.text verifyCode:self.verifyCodeTF.text onResult:^(MNWCode code, NSString * _Nullable msg) {
+        [self showToast:msg];
+    }];
+}
+
 - (IBAction)changeResetType:(UISegmentedControl *)sender {
     if (sender.selectedSegmentIndex == 0) {
         self.accountTF.placeholder = @"通信证";
@@ -53,6 +59,9 @@ typedef NS_ENUM(NSUInteger, ResetType) {
         self.verifyCodeTypeSeg.selectedSegmentIndex = 1;
         self.verifyCodeTypeSeg.enabled = NO;
     }
+    self.accountTF.text = nil;
+    self.pswTF.text = nil;
+    self.emailTF.text = nil;
 }
 - (IBAction)changeVerifyCodeType:(UISegmentedControl *)sender {
     if (sender.selectedSegmentIndex == 0) {
@@ -90,9 +99,7 @@ typedef NS_ENUM(NSUInteger, ResetType) {
         [self showToast:@"请输入通行证账号"];
         return;
     }
-    [MNWSDK queryBindAccountInfoWithAccount:self.accountTF.text onResult:^(MNWCode code, NSString * _Nullable msg) {
-        
-    } completionHandler:^(id  _Nullable responseObject) {
+    [MNWSDK queryBindAccountInfoWithAccount:self.accountTF.text completionHandler:^(MNWCode code, NSString * _Nullable msg, id  _Nullable responseObject) {
         NSString *str = [self dictionaryToJson:responseObject];
         self.bindInfoLB.text = str;
     }];

@@ -42,8 +42,8 @@
     self.emailCodeType = MNWSendVerCodeType_bind_email;
     
     [MNWSDK queryBindAccountInfoWithAccount:self.userIDLB.text completionHandler:^(MNWCode code, NSString * _Nullable msg, id  _Nullable responseObject) {
-        if ([responseObject isDictionary] && [responseObject[@"thirdInfos"] isValidArray]) {
-            for (NSDictionary *dict in responseObject[@"thirdInfos"]) {
+        if ([responseObject isValidArray]) {
+            for (NSDictionary *dict in responseObject) {
                 if ([dict[@"mergeChannelId"] integerValue] == 7606710) {
                     [self.binFaceBookBtn setTitle:@"解绑Facebook" forState:UIControlStateNormal];
                 }
