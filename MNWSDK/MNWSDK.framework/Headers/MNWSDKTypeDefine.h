@@ -30,11 +30,11 @@ typedef NS_ENUM(NSUInteger, MNWLoginType) {
 };
 
 typedef NS_ENUM(NSUInteger, MNWThirdBindType) {
-    /// 第三方授权绑定Facebook
+    /// 第三方授权绑定/解绑Facebook
     MNWThirdBindTypeFaceBook,
-    /// 第三方授权绑定Google
+    /// 第三方授权绑定/解绑Google
     MNWThirdBindTypeGoogle,
-    /// 第三方授权绑定Apple
+    /// 第三方授权绑定/解绑Apple
     MNWThirdBindTypeApple,
 };
 
@@ -172,6 +172,8 @@ typedef NS_ENUM(NSUInteger, MNWCode) {
     MNWCode_VERIFY_CODE_FAILED = 60,
     /// 验证码验证成功
     MNWCode_VERIFY_CODE_SUCCESS = 61,
+    /// 第三方取消授权
+    MNWCode_THIRD_AUTHOR_CANCEL = 666,
     /// 成功
     MNWCode_DEFAULT_SUCCESS = 200,
     /// 失败

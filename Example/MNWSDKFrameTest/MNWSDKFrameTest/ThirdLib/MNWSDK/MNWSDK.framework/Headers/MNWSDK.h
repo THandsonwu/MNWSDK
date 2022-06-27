@@ -92,12 +92,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 查询第三方账号，邮箱，手机绑定列表
 /// @param account 通行证账号
-/// @param onResult ...
 /// @param completionHandler 绑定信息回调
 /// 返回这样的数组
 /// [ {
 ///     accountNum = xxxxxxxx;
-///     mergeChannelId = 7606710;     ----- 7606710：Facebook ；7606712：Google ；-1 ：email ; -2 : phone
+///     mergeChannelId = 7606710;     ----- 7606710:Facebook ；7606712:Google ；7606715: Apple;  -1 ：email ; -2 : phone
 ///     setAccountNum = 1;
 ///     setMergeChannelId = 0;
 ///     setTenementId = 0;
@@ -105,14 +104,14 @@ NS_ASSUME_NONNULL_BEGIN
 ///     tenementId = xxxxxx;
 ///     thirdUserName = "xxxx"; -----手机号，邮箱号，第三方昵称等信息
 /// }]
-+ (void)queryBindAccountInfoWithAccount:(NSString *)account onResult:(onResult _Nullable)onResult completionHandler:(void (^)(id _Nullable responseObject))completionHandler;
++ (void)queryBindAccountInfoWithAccount:(NSString *)account completionHandler:(void (^)(MNWCode code, NSString * _Nullable msg, id _Nullable responseObject))completionHandler;
 
 /// 退出登录
 /// @param onResult ...
 + (void)logout:(onResult _Nullable)onResult;
 
 /// 文字密码验证问题对照表
-/// @param lang 当前语言 "en"为英文
+/// @param lang 当前语言 "en"为英文, "zh"为中文，其它不支持
 + (NSArray *)securityQuestions:(NSString *)lang;
 
 #pragma mark -- 绑定/解绑相关接口
@@ -131,13 +130,13 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param account 通行证账号
 /// @param bindType 绑定类型
 /// @param onResult ...
-+ (void)authorBindAccount:(NSString *)account bindType:(MNWAuthorBindType)bindType onResult:(onResult _Nullable)onResult;
++ (void)thirdBindAccount:(NSString *)account bindType:(MNWThirdBindType)bindType onResult:(onResult _Nullable)onResult;
 
 /// 第三方授权账号解绑
 /// @param account 通行证账号
 /// @param unBindType 解绑类型
 /// @param onResult ...
-+ (void)authorUnBindAccount:(NSString *)account unBindType:(MNWAuthorBindType)unBindType onResult:(onResult _Nullable)onResult;
++ (void)thirdUnBindAccount:(NSString *)account unBindType:(MNWThirdBindType)unBindType onResult:(onResult _Nullable)onResult;
 
 
 #pragma mark -- 海外专属
@@ -147,6 +146,13 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param email 邮箱账号
 /// @param onResult ...
 + (void)sendResetVerifyCodeWithUin:(NSString *)uin email:(NSString *)email onResult:(onResult _Nullable)onResult;
+
+/// 迷你号发送手机验证码（暂时弃用，后台逻辑未完善）
+/// @param uin 迷你号
+/// @param phone 手机号
+/// @param phoneAreaCode 手机区号
+/// @param onResult ...
++ (void)sendResetVerifyCodeWithUin:(NSString *)uin phone:(NSString *)phone phoneAreaCode:(NSString *)phoneAreaCode onResult:(onResult)onResult DEPRECATED_MSG_ATTRIBUTE("this service is not available ,don't used");
 
 /// 迷你号或者邮箱验证验证码接口
 /// @param uin 迷你号

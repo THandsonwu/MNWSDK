@@ -147,6 +147,13 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param onResult ...
 + (void)sendResetVerifyCodeWithUin:(NSString *)uin email:(NSString *)email onResult:(onResult _Nullable)onResult;
 
+/// 迷你号发送手机验证码（暂时弃用，后台逻辑未完善）
+/// @param uin 迷你号
+/// @param phone 手机号
+/// @param phoneAreaCode 手机区号
+/// @param onResult ...
++ (void)sendResetVerifyCodeWithUin:(NSString *)uin phone:(NSString *)phone phoneAreaCode:(NSString *)phoneAreaCode onResult:(onResult)onResult DEPRECATED_MSG_ATTRIBUTE("this service is not available ,don't used");
+
 /// 迷你号或者邮箱验证验证码接口
 /// @param uin 迷你号
 /// @param email 邮箱
