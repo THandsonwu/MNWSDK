@@ -37,6 +37,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param enableDebug 是否能调试（会切换测试环境）
 + (void)setEnableDebug:(BOOL)enableDebug;
 
+/// 透传客户端额外的参数，作为请求的补充参数
+/// @param extensionParams 额外参数的json 字符串
++ (void)setExtensionParams:(NSString *)extensionParams;
 
 #pragma mark --- 聚合登录相关接口
 
@@ -93,17 +96,16 @@ NS_ASSUME_NONNULL_BEGIN
 /// 查询第三方账号，邮箱，手机绑定列表
 /// @param account 通行证账号
 /// @param completionHandler 绑定信息回调
-/// 返回这样的数组
-/// [ {
-///     accountNum = xxxxxxxx;
-///     mergeChannelId = 7606710;     ----- 7606710:Facebook ；7606712:Google ；7606715: Apple;  -1 ：email ; -2 : phone
-///     setAccountNum = 1;
-///     setMergeChannelId = 0;
-///     setTenementId = 0;
-///     setThirdUserName = 1;
-///     tenementId = xxxxxx;
-///     thirdUserName = "xxxx"; -----手机号，邮箱号，第三方昵称等信息
-/// }]
+/// 返回这样的数据
+/// {
+///"thirdInfos": [
+///  {
+///    "mergeChannelId": -1,   ----- 7606710:Facebook ；7606712:Google ；7606715: Apple;  -1 ：email ; -2 : phone
+///    "tenementId": 10870003,
+///    "accountNum": "317006399371657219",
+///    "thirdUserName": "1124634508@qq.com"
+///  }]
+///}
 + (void)queryBindAccountInfoWithAccount:(NSString *)account completionHandler:(void (^)(MNWCode code, NSString * _Nullable msg, id _Nullable responseObject))completionHandler;
 
 /// 退出登录
