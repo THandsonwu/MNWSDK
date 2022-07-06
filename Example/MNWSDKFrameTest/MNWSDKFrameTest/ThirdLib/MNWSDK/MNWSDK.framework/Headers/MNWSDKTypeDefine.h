@@ -220,7 +220,7 @@ typedef NS_ENUM(NSUInteger, MNWSDKResponseState){
  *  用户请求回调
  *
  *  @param code  回调码
- *  @param msg  回调信息
+ *  @param msg  回调信息 如果是失败，会包含错误码和错误信息
  */
 typedef void(^onResult)(MNWCode code, NSString * _Nullable msg);
 
@@ -232,7 +232,7 @@ typedef void(^onResult)(MNWCode code, NSString * _Nullable msg);
 typedef void(^onLoginResult)(MNWUser * _Nullable user);
 
 /**
- *  获取用户平添鉴权成功回调
+ *  获取用户平台鉴权成功回调
  *
  *  @param token 用户token信息
  */
